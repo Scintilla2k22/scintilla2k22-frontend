@@ -1,0 +1,8 @@
+.header{
+    /* padding: 10px; */
+    height: 100vh;
+    width: 100vw;
+    background:var(--pr_bg);
+    /* background: #000; */
+    /* position: relative; */
+  }
