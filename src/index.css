@@ -51,13 +51,13 @@ code {
 
 .heading1{
   font-size: 4rem;
-  color: var(--sc_bg);
+  color: var(--sc_color);
   font-family: var(--fest-font);
 }
 
 .heading2{
   font-size: 3rem;
-  color: var(--sc_bg);
+  color: var(--sc_color);
   font-family: var(--fest-font);
 }
 

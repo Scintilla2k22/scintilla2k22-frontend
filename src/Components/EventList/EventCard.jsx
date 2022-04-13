@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const loc = process.env.PUBLIC_URL
 
@@ -10,7 +11,7 @@ function EventCard() {
                 <div className="card-body">
                     <h5 className="card-title">Card title</h5>
                     <p className="card-text">Some quick example</p>
-                    <a href='https://www.facebook.com' className="btn btn-success">Check Out</a>
+                    <Link to='/eventpage' className="btn btn-success">Check Out</Link>
                 </div>
             </div>
         </div>
