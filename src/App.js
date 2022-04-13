@@ -1,22 +1,30 @@
-import './App.css';
-import { Routes, Route } from 'react-router-dom'
-import EventList from './Components/EventList/EventList';
-import EventPage from './Components/Eventpage/EventPage';
-import Header from './Components/Header/Header';
-
-
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import EventList from "./Components/EventList/EventList";
+import EventPage from "./Components/Eventpage/EventPage";
+import Header from "./Components/Header/Header";
+import { EventContext, EventContextProvider } from "./context";
+import { getUpcommingEventList, getLiveEvents, getEndedEvents } from "./context/action";
+import { useEffect, useContext  } from "react";
 function App() {
+   const {state, eventContextDispatch } = useContext(EventContext); 
+  
+  useEffect(() => {
+    
+   getUpcommingEventList(eventContextDispatch);
+   getLiveEvents(eventContextDispatch);    
+   getEndedEvents(eventContextDispatch); 
+
+  }, []);
+
   return (
     <div className="App">
       <Routes>
-        <Route path='/' element={<Header />} />
-        <Route path='/eventpage' element={<EventPage />} />
+        <Route path="/" element={<Header />} />
+        <Route path="/eventpage" element={<EventPage />} />
       </Routes>
     </div>
   );
 }
-
-
-
 
 export default App;
