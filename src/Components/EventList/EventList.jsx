@@ -1,13 +1,18 @@
 import React from 'react'
-import './eventList.css'
+import './event.css'
 import EventCard from './EventCard'
+import EventSection from './EventSection'
 
 function EventList() {
     return (
-        <div className='event-list'>
+        <div className='event'>
             <h1>Events</h1>
-            <EventCard />
-        </div>
+            <div className='event-type  m-container'>
+                <EventSection />
+                <EventSection />
+                <EventSection />
+            </div>
+        </div >
     )
 }
 
