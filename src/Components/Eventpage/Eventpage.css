@@ -34,13 +34,14 @@ background: linear-gradient(to bottom, #dc2430, #7b4397);
 }
 
 .status{
-    display: inline-block;
+    display: grid;
+    place-items: center;
     border:1px solid black;
     border-radius: 20px;
     padding: 2px;
     font-weight: bold;
     color: green;
-    text-align: center;
     width: 100px;
+    text-transform:uppercase;
     
 }
