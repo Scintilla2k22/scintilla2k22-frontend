@@ -1,4 +1,5 @@
 import React, {useContext} from 'react'
+import ContestentInfo from './ContestentInfo'
 import './Eventpage.css'
 import { getUpcommingEventList, getEndedEvents, getLiveEvents } from '../../context/action';
 import { EventContext } from '../../context';
@@ -11,7 +12,7 @@ function EventPage() {
     
     return (
         <div className='event-page'>
-            <div className="event-info">
+            <div className="event-info m-container">
                 <div className="left-info">
                     <img src={`${loc}/image/knowbuddy.png`} alt="event-banner" />
                 </div>
@@ -21,8 +22,16 @@ function EventPage() {
                     <span className='status'>Upcoming</span>
                 </div>
             </div>
-            <div className="contestent-info">
 
+            <div className="con-info ">
+                <h2 style={{ fontSize: '2.5rem', margin: '20px', textAlign: 'center' }} className='heading2'>Contestent Information</h2>
+                <div className="con-list">
+                    <ContestentInfo />
+                    <ContestentInfo />
+                    <ContestentInfo />
+                    <ContestentInfo />
+                    <ContestentInfo />
+                </div>
             </div>
 
         </div>
