@@ -6,6 +6,7 @@ import Header from "./Components/Header/Header";
 import { EventContext, EventContextProvider } from "./context";
 import { getUpcommingEventList, getLiveEvents, getEndedEvents, getEventList} from "./context/action";
 import { useEffect, useContext  } from "react";
+import Home from "./Pages/home";
 
 function App() {
    const {state, eventContextDispatch } = useContext(EventContext); 
@@ -22,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Header />} />
+        <Route path="/" element={<Home/>} />
         <Route path="/eventpage" element={<EventPage />} />
       </Routes>
     </div>

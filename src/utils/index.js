@@ -1,0 +1,1 @@
+export const asset  =  process.env.PUBLIC_URL

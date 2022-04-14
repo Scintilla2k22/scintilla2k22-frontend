@@ -31,7 +31,6 @@ code {
   --color_silver:#C9ADA7;
   --color_gray:#4A4E69;
 
-
   --pr_font : 'Rock 3D', cursive;
   /* --pr_font : 'Ananda','Namaste',Regular */
   /* --se_font :  'BIZ UDMincho', serif; */
@@ -42,6 +41,10 @@ code {
   
   --pr2_font:'Lora', serif;
   --fest-font:'Righteous', cursive;
+
+
+/* Gradients */
+--pr_gradient :  linear-gradient(180deg, rgba(1, 42, 74, 0.93) 38.14%, #000000 93.87%);
 
 }
 
