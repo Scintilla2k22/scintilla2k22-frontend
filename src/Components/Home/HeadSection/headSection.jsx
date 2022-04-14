@@ -13,7 +13,8 @@ const particlesLoaded = (container) => {
 
 const HeadSection = () => {
   return (
-    <section className="head-container ">
+      <>
+    <section className="head-container bg-light ">
         
       <div className="head-dust">
       <Particles
@@ -52,13 +53,17 @@ const HeadSection = () => {
           </div>
         </div>
         <div className="col col-6  head-right">
+           
+        
 
         </div>
       </div>
-      <div className="wave-box">
-          <img src = {`${asset}/image/curves.svg`} />
-      </div>
+    
     </section>
+      <div className="wave-box bg-light">
+      <img src = {`${asset}/image/curves.svg`} />
+  </div>
+  </>
   );
 };
 

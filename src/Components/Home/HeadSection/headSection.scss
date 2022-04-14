@@ -88,14 +88,16 @@
         position: relative;        
     }
 
-    .wave-box{
-        height: 260px;
-        margin-top: -3px;
-        overflow: hidden;
-        position: relative;
-        img{
-            width: 100%;
-        }
-    }
 
+
+}
+
+.wave-box{
+    height: 300px;
+    margin-top: -3px;
+    overflow: hidden;
+    position: relative;
+    img{
+        width: 100%;
+    }
 }
