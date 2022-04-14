@@ -1,10 +1,15 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import ContestentInfo from './ContestentInfo'
 import './Eventpage.css'
+import { getUpcommingEventList, getEndedEvents, getLiveEvents } from '../../context/action';
+import { EventContext } from '../../context';
 
 const loc = process.env.PUBLIC_URL
 
 function EventPage() {
+
+    const {state, eventContextDispatch} = useContext(EventContext);
+    
     return (
         <div className='event-page'>
             <div className="event-info m-container">
