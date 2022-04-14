@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, { useContext } from 'react'
 import ContestentInfo from './ContestentInfo'
 import './Eventpage.css'
 import { getUpcommingEventList, getEndedEvents, getLiveEvents } from '../../context/action';
@@ -8,8 +8,8 @@ const loc = process.env.PUBLIC_URL
 
 function EventPage() {
 
-    const {state, eventContextDispatch} = useContext(EventContext);
-    
+    const { state, eventContextDispatch } = useContext(EventContext);
+
     return (
         <div className='event-page'>
             <div className="event-info m-container">
@@ -17,7 +17,7 @@ function EventPage() {
                     <img src={`${loc}/image/knowbuddy.png`} alt="event-banner" />
                 </div>
                 <div className="right-info">
-                    <h1 style={{ color: 'black' }} className='heading1'>Name of Event</h1>
+                    <h1 className='heading1'>Name of Event</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, inventore ut? Vitae aperiam quis saepe tenetur. Repellendus ipsam explicabo voluptatibus!</p>
                     <span className='status'>Upcoming</span>
                 </div>

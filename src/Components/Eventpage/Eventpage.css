@@ -1,10 +1,9 @@
 .event-page{
-    background: #7b4397;  
-    background: -webkit-linear-gradient(to bottom, #dc2430, #7b4397); 
-    background: linear-gradient(to bottom, #dc2430, #7b4397);
-    /* height: 60vh; */
-    backdrop-filter: blur(20px);
-    color: white;
+    background: rgb(8, 10, 45);  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #fefefe, rgb(0, 4, 54));  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #00133b, rgb(0, 4, 54));
+    /* backdrop-filter: blur(20px); */
+    color: rgb(193, 193, 193);
     /* width: 100vw !important; */
 
    
@@ -21,6 +20,8 @@
  margin-bottom: 100px;
  
 }
+
+
 
 .left-info{
     width: 30%;
@@ -40,6 +41,9 @@
 .right-info p {
     font-size: 1.1rem;
 }
+.right-info h1{
+    color:white;
+}
 
 .status{
     display: grid;
@@ -56,14 +60,12 @@
 
 
 .con-info{
-    background: rgba( 255, 255, 255, 0.3 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 12.5px );
--webkit-backdrop-filter: blur( 12.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-
-
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     width: 100%;
     margin-top: -100px;
 }
@@ -90,9 +92,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 .con-item{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     width: 100%;
-    /* border: 2px solid; */
     margin: 10px 0;
     border-radius: 5px;
     padding: 10px;
