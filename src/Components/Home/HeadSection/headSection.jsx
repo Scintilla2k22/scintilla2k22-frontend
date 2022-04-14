@@ -25,19 +25,38 @@ const HeadSection = () => {
    
       </div>
       <div className="head-bg">
-        <img src = {`${asset}/image/head-section-2.png`} />
-        <img src = {`${asset}/image/head-right-section-1.png`} />
+          {/* <div className="head-planet"></div> */}
+        <img src = {`${asset}/image/head-left-image.png`} />
+
+        <img src = {`${asset}/image/head-right-image.png`} />
 
       </div>
-      <div className="row">
+      <div className="row head-content m-0">
         <div className="col col-6 head-left ">
           <div className="head-box">
-            
+              <div className="text-1">
+                <span>S</span>
+                <span>c</span>
+                <span>i</span>
+                <span>n</span>
+                <span>t</span>
+                <span>i</span>
+                <span>l</span>
+                <span>l</span>
+                <span>a</span>
+              </div>
+
+              <p className="text-2">
+                  2K22
+              </p>
           </div>
         </div>
         <div className="col col-6  head-right">
 
         </div>
+      </div>
+      <div className="wave-box">
+          <img src = {`${asset}/image/curves.svg`} />
       </div>
     </section>
   );
