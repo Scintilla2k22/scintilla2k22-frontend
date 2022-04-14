@@ -2,7 +2,7 @@ import axios from "axios";
 import {
   filter_event_type,
   get_all_events,
-  get_contestants,
+  get_participants,
   get_team,
 } from "./api";
 
@@ -61,7 +61,7 @@ export const getEndedEvents = async (dispatch) => {
 export const getContestantOfEvent = (team_id) => async (dispatch) => {
   const response = axios({
     method: "get",
-    url: `${get_contestants}/${team_id}/`,
+    url: `${get_participants}/${team_id}/`,
   }).then(function (response) {
     return response;
   });
