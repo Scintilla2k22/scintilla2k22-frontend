@@ -7,7 +7,7 @@ const loc = process.env.PUBLIC_URL
 
 function EventPage() {
 
-    const [state, eventContextDispatch] = useContext(EventContext);
+    const {state, eventContextDispatch} = useContext(EventContext);
     
     return (
         <div className='event-page'>

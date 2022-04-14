@@ -4,14 +4,17 @@ import EventCard from './EventCard'
 
 function EventSection(props) {
 
-    const data = props.data || [];
+   const {
+       data = null,
+   } = props;
 
+   console.log("data - ", data)
     return (
         <div className='event-list-container'>
             <h2 style={{ color: 'red' }} className='heading2' >Upcoming Events</h2>
             <div className='event-list'>
                 
-                {  data.map((info, ind) =>  <EventCard data = {info} />
+                { data && data.map((info, ind) =>  <EventCard data = {info} />
                 ) }
                 
             </div>

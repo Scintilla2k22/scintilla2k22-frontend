@@ -4,16 +4,18 @@ import EventList from "./Components/EventList/EventList";
 import EventPage from "./Components/Eventpage/EventPage";
 import Header from "./Components/Header/Header";
 import { EventContext, EventContextProvider } from "./context";
-import { getUpcommingEventList, getLiveEvents, getEndedEvents } from "./context/action";
+import { getUpcommingEventList, getLiveEvents, getEndedEvents, getEventList} from "./context/action";
 import { useEffect, useContext  } from "react";
+
 function App() {
    const {state, eventContextDispatch } = useContext(EventContext); 
-  
-  useEffect(() => {
+
+  useEffect( () => {
     
-   getUpcommingEventList(eventContextDispatch);
-   getLiveEvents(eventContextDispatch);    
-   getEndedEvents(eventContextDispatch); 
+    getUpcommingEventList(eventContextDispatch);
+    getLiveEvents(eventContextDispatch);
+    getEndedEvents(eventContextDispatch);
+
 
   }, []);
 
