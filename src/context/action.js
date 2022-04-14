@@ -6,6 +6,7 @@ import {
   get_team,
 } from "./api";
 
+
 export const getEventList = async (dispatch) => {
   const response = await axios({
     method: "get",
