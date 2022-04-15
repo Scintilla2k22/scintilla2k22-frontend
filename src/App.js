@@ -2,17 +2,18 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import EventList from "./Components/EventList/EventList";
 import EventPage from "./Components/Eventpage/EventPage";
-import Header from "./Components/Header/Header";
+import Header from "./Components/events/Events";
 import { EventContext, EventContextProvider } from "./context";
-import { getUpcommingEventList, getLiveEvents, getEndedEvents, getEventList} from "./context/action";
-import { useEffect, useContext  } from "react";
+import { getUpcommingEventList, getLiveEvents, getEndedEvents, getEventList } from "./context/action";
+import { useEffect, useContext } from "react";
 import Home from "./Pages/home";
+import Events from './Components/events/Events'
 
 function App() {
-   const {state, eventContextDispatch } = useContext(EventContext); 
+  const { state, eventContextDispatch } = useContext(EventContext);
 
-  useEffect( () => {
-    
+  useEffect(() => {
+
     getUpcommingEventList(eventContextDispatch);
     getLiveEvents(eventContextDispatch);
     getEndedEvents(eventContextDispatch);
@@ -23,8 +24,9 @@ function App() {
   return (
     <div className="App" >
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/eventpage" element={<EventPage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/events/eventpage" element={<EventPage />} />
       </Routes>
     </div>
   );

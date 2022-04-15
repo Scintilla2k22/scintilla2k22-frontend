@@ -14,33 +14,33 @@ const particlesLoaded = (container) => {
 
 const HeadSection = () => {
   return (
-      <>
-    <section className="head-container ">
-        
-      
-      <div className="head-dust">
-      {/* <Particles
+    <>
+      <section className="head-container ">
+
+
+        <div className="head-dust">
+          {/* <Particles
           id="tsparticles"
           init={particlesInit}
           loaded={particlesLoaded}
           options={{ ...particlePreset }}
         /> */}
-   
-      </div>
-    
-      <div className="head-bg">
-      { 
-        [1, 2, 4, 5,1, 2, 4, 5,1, 2, 4].map( () => <Asteroids /> )
-      }
+
+        </div>
+
+        <div className="head-bg">
+          {
+            [1, 2, 4, 5, 1, 2, 4, 5, 1, 2, 4].map(() => <Asteroids />)
+          }
           {/* <div className="head-planet"></div> */}
-        <img src = {`${asset}/image/head-left-image.png`} />
+          <img src={`${asset}/image/head-left-image.png`} />
 
-        <img src = {`${asset}/image/head-right-image.png`} />
+          <img src={`${asset}/image/head-right-image.png`} />
 
-      </div>
-      <div className="row head-content m-0">
-        <div className="col-md-12 col-md-6 head-left ">
-          <div className="head-box">
+        </div>
+        <div className="row head-content m-0">
+          <div className="col-md-12 col-md-6 head-left ">
+            <div className="head-box">
               <div className="text-1">
                 <span>S</span>
                 <span>c</span>
@@ -54,22 +54,22 @@ const HeadSection = () => {
               </div>
 
               <p className="text-2">
-                  2K22
+                2K22
               </p>
+            </div>
           </div>
         </div>
         <div className="col-md-6  head-right">
-           
-        
+
+
 
         </div>
-      </div>
-      
-    </section>
+
+      </section>
       {/* <div className="wave-box bg-light">
       <img src = {`${asset}/image/curves.svg`} />
   </div> */}
-  </>
+    </>
   );
 };
 
