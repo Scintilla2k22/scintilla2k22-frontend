@@ -23,6 +23,7 @@
 
 // Corordinator Profile 
 
+
 .coordinator-profile{
     display: flex;
     flex-direction: column;
@@ -52,7 +53,7 @@
         }
 
         p{
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             margin: 0px;
         }
     }
@@ -61,12 +62,31 @@
 
 @media (max-width : 900px) {
     .coordinator-profile{
-        width: 150px;
+        width: 120px;
 
         img{
             width: 60px;
             height: 60px;
             border-radius: 50%;
         }
+
+        .name, .role, .phone{
+            font-weight: 400;
+            font-size: 13px;
+        }
+        
+    }
+}
+
+@media (max-width : 380px) {
+    .coordinator-profile{
+        width: 115px;
+
+        img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+
     }
 }

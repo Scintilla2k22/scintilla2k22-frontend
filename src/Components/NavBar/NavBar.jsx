@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.scss'
+import { AiOutlineAlignRight, AiOutlineClose } from "react-icons/ai";
 
 import { NavLink } from "react-router-dom"
 
@@ -12,6 +13,8 @@ function NavBar() {
                 </div>
 
                 <div className="nav-right">
+
+                    <AiOutlineAlignRight className='hamburger' />
                     <ul className='nav-items'>
                         <li className="nav-item">
                             <NavLink activeClassName="is-active" className="nav-link" to="/">Home</NavLink>
@@ -34,9 +37,12 @@ function NavBar() {
                                 Contact
                             </NavLink>
                         </li>
-
                     </ul>
+
+
                 </div >
+
+
             </div >
         </div >
     )

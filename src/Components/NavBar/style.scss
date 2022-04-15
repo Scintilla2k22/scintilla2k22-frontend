@@ -39,6 +39,10 @@
                 margin: 0;
             }
 
+            .hamburger{
+        
+                display: none
+            }
         .nav-items{
             display: flex;
             justify-content: center;
@@ -76,3 +80,13 @@
     color: white;
 }
 
+
+@media screen and (max-width: 900px) {
+    .nav .navbar .nav-right{
+        display: none;
+    }
+    .hamburger{
+        
+        display: block;
+    }
+}

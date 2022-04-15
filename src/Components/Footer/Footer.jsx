@@ -7,7 +7,7 @@ function Footer() {
     return (
         <div className="footer">
             <div className="footer-left">
-                © 2k22 scintilla.com, All rights reserved. Made with <span>	&#x2764;</span> by Anas, Ayush
+                © 2k22 scintilla.com, Made with <span>	&#x2764;</span> by Anas, Ayush
             </div>
             <div className="footer-right">
                 <a href="https://www.instagram.com/scintilla2k22/" target="_blank">
