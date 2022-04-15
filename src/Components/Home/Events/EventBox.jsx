@@ -1,7 +1,7 @@
 import React from 'react'
 import Planet from '../../Arts/planet';
 import './Events.scss'
-
+import Profile from '../../Contactus/Profile';
 export default function EventBox(props) {
 
   
@@ -31,27 +31,13 @@ export default function EventBox(props) {
               {subtitle && <h6 style={{ color: style.color.primary }} className="subtitle"> "{subtitle}"</h6>}
               <p className="desc">{desc}</p>
               <div className=" cord-block ">
-                <p style={{ color: style.color.primary }} > Rules : </p>
-                <ul className="cord">
-                  {rules &&
-                    rules.map((rule) => (
-                      <li>
-                        {rule}
-                      </li>
-                    ))}
-                </ul>
-  
-                <p style={{ color: style.color.primary }} > coordinators : </p>
-                <ul className="cord">
+                <p style={{ color: style.color.primary }} > Coordinators : </p>
+                <div className="cord">
                   {coordinators &&
                     coordinators.map((co) => (
-                      <li>
-                        <pre>
-                          {co.name} ({co.branch} , {co.year})
-                        </pre>
-                      </li>
+                      <Profile data = {co} />
                     ))}
-                </ul>
+                </div>
               </div>
             </div>
           </div>
