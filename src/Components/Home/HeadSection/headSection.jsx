@@ -3,6 +3,7 @@ import "./headSection.scss";
 import Particles from "react-tsparticles";
 import { particlePreset, particleStatic, particleTwinkle } from "../../../utils/particle";
 import { asset } from "../../../utils";
+import Asteroids from "../../Arts/asteroids";
 
 const particlesInit = (main) => {
   console.log(main);
@@ -14,8 +15,9 @@ const particlesLoaded = (container) => {
 const HeadSection = () => {
   return (
       <>
-    <section className="head-container bg-light ">
+    <section className="head-container ">
         
+      
       <div className="head-dust">
       <Particles
           id="tsparticles"
@@ -25,7 +27,11 @@ const HeadSection = () => {
         />
    
       </div>
+    
       <div className="head-bg">
+      { 
+        [1, 2, 4, 5,1, 2, 4, 5,1, 2, 4].map( () => <Asteroids /> )
+      }
           {/* <div className="head-planet"></div> */}
         <img src = {`${asset}/image/head-left-image.png`} />
 
@@ -58,11 +64,11 @@ const HeadSection = () => {
 
         </div>
       </div>
-    
+      
     </section>
-      <div className="wave-box bg-light">
+      {/* <div className="wave-box bg-light">
       <img src = {`${asset}/image/curves.svg`} />
-  </div>
+  </div> */}
   </>
   );
 };
