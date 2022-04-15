@@ -10,14 +10,15 @@ import Contact from '../Components/Contactus/Contact'
 import Events from '../Components/Home/Events/Events'
 export default function Home() {
   return (
-    <div style={{ backgroundColor: "#010015" }} >
+    <div style={{ backgroundColor: "var(--sc_bg)" }} >
       {/* <NavBar /> */}
       <HeadSection />
       <About />
       <Memories />
       {/* <EventRowSection /> */}
-      <Contact />
       <Events />
+      <Contact />
+
     </div>
   )
 }

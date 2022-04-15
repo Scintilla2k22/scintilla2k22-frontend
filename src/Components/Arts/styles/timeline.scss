@@ -1,7 +1,6 @@
 .wrapper {
     background-color: transparent;
     width: 100%;
-    min-height: 100vh;
     font: normal 16px/26px Open Sans Condensed, sans-serif;
     color: #fff;
     box-sizing: border-box;
@@ -11,6 +10,7 @@
     overflow: hidden;
   z-index: 4;
   position: relative;
+  height: 100% !important;
   }
   
   .block {
@@ -182,6 +182,8 @@
     }
 
 .wrapper {
+
+  height: 100% !important;
 
   .ripple-box{
     transform: translateY(-10px) scale(0.3);

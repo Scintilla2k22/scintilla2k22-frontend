@@ -24,9 +24,11 @@
 }
 
 
-@media (max-width : 900px) {
+@media (max-width : 800px) {
         .memories-box{
-            max-height: 300px !important;
+
+            max-height: 200px !important;
+
             .planet{
                 transform: scale(3);
             }

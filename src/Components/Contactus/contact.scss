@@ -1,8 +1,8 @@
 .contact{
-    margin: 40px 0px;
-    width: 70%;
+    margin-top: 100px !important;
+    width: 100%;
     margin: auto;
-
+    
     h2{
         font-size: 4rem;
         text-align: center;
@@ -14,6 +14,7 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        margin-top: 20px;
     }
 }
 
@@ -33,9 +34,10 @@
     margin: 10px;
 
     img{
-        width: 120px;
-        height: 120px;
+        width: 90px;
+        height: 90px;
         border-radius: 50%;
+        background-color: pink;
     }
 
     .profile-info{
@@ -50,9 +52,21 @@
         }
 
         p{
-            font-size: 1rem;
+            font-size: 0.8rem;
             margin: 0px;
         }
     }
 
+}
+
+@media (max-width : 900px) {
+    .coordinator-profile{
+        width: 150px;
+
+        img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+    }
 }
