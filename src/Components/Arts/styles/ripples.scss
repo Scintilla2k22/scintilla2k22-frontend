@@ -1,7 +1,7 @@
 .ripple-box{
 
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-color:transparent;
     transform: scale(2);
@@ -32,7 +32,7 @@
     @keyframes ripple-wave {
 
         100%{
-            transform: scale(2);
+            transform: scale(1.3);
         }
         
     }

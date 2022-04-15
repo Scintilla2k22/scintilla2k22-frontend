@@ -1,4 +1,5 @@
 import React from 'react'
+import Planet from '../../Arts/planet'
 import Timeline from '../../Arts/timeline'
 import './style.scss'
 export default function Memories() {
@@ -8,6 +9,8 @@ export default function Memories() {
             Glimpse of 2K19
         </h2>
         <Timeline />
+        <Planet />
+
     </div>
   )
 }

@@ -2,6 +2,7 @@ import React from "react";
 import Planet from "../../Arts/planet";
 import "./style.scss";
 import Ripples from "../../Arts/ripples";
+
 export default function About() {
   return (
     <div className="container-fluid  about-container">
@@ -9,14 +10,7 @@ export default function About() {
       
       <div className="row">
         <div className="col col-6">
-        <div className="about-left-ani">
-                {/* <span></span>
-                <span></span>
-                <span></span>
-                <span></span> */}
-             
-            </div>
-
+     
         </div>
         <div className="col col-6 d-flex justify-content-center">
           <div className="about-text">
@@ -55,7 +49,6 @@ export default function About() {
             [2,2,2].map((id) => <Planet /> )
         }
 
-        <Ripples />
     </div>
   );
 }
