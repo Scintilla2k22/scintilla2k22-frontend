@@ -46,7 +46,7 @@ code {
 
 /* Gradients */
 --pr_gradient :  linear-gradient(180deg, rgba(1, 42, 74, 0.93) 38.14%, #000000 93.87%);
-
+--sc_gradient:linear-gradient(76.89deg, rgba(10, 3, 55, 0.93) 33.77%, rgba(83, 3, 43, 0.93) 73.71%);
 }
 
 a{
