@@ -34,7 +34,7 @@ export default function Timeline() {
       { 
       data.map( (ind) =>    <div key ={ind} class="each-event">
 
-        <Ripples />
+        <Ripples data = { ind } />
     </div>)
        
       }   

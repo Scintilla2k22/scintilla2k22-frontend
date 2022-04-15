@@ -13,8 +13,7 @@ export default function EventRowSection() {
           Live Events
         </h3>
       </div>
-      {/* <EventsRow /> */}
-      <EventCarousel />
+      <EventsRow />
       <Planet />
     </div>
   )

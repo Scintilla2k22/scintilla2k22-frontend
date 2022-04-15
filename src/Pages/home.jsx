@@ -5,15 +5,15 @@ import Memories from '../Components/Home/Memories/Memories'
 import EventsRow from '../Components/EventList/EventsRow'
 import EventRowSection from '../Components/EventList/EventRowSection'
 import NavBar from '../Components/NavBar/NavBar'
-
+import Events from '../Components/Home/Events/Events'
 export default function Home() {
   return (
-    <div style={{ backgroundColor: "#010015", position: 're' }} >
-      <NavBar />
+    <div style={{ backgroundColor: "#010015"  }} >
+      {/* <NavBar /> */}
       <HeadSection />
       <About />
       <Memories />
-      <EventRowSection />
+      <Events />
     </div>
   )
 }
