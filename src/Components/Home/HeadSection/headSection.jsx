@@ -19,12 +19,12 @@ const HeadSection = () => {
         
       
       <div className="head-dust">
-      <Particles
+      {/* <Particles
           id="tsparticles"
           init={particlesInit}
           loaded={particlesLoaded}
           options={{ ...particlePreset }}
-        />
+        /> */}
    
       </div>
     
@@ -39,7 +39,7 @@ const HeadSection = () => {
 
       </div>
       <div className="row head-content m-0">
-        <div className="col col-6 head-left ">
+        <div className="col-md-12 col-md-6 head-left ">
           <div className="head-box">
               <div className="text-1">
                 <span>S</span>
@@ -58,7 +58,7 @@ const HeadSection = () => {
               </p>
           </div>
         </div>
-        <div className="col col-6  head-right">
+        <div className="col-md-6  head-right">
            
         
 
