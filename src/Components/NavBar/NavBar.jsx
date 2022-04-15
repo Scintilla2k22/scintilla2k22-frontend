@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.scss'
-import { AiOutlineAlignRight, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
+import { GiHamburgerMenu, } from "react-icons/gi";
 
 import { NavLink } from "react-router-dom"
 
 function NavBar() {
+
+    const [showNav, setShowNav] = useState(false);
+
     return (
         <div className="nav">
             <div className="navbar">
@@ -12,35 +16,65 @@ function NavBar() {
                     <h3>BTKIT Dwarahat</h3>
                 </div>
 
-                <div className="nav-right">
+                {!showNav ?
+                    <div className='nav-right'>
+                        <ul className='nav-items'>
+                            <li className="nav-item">
+                                <NavLink activeClassName="is-active" className="nav-link" to="/">Home</NavLink>
+                            </li>
 
-                    <AiOutlineAlignRight className='hamburger' />
-                    <ul className='nav-items'>
-                        <li className="nav-item">
-                            <NavLink activeClassName="is-active" className="nav-link" to="/">Home</NavLink>
-                        </li>
+                            <li className="nav-item">
+                                <NavLink activeClassName="is-active" className="nav-link" to="#about">
+                                    About
+                                </NavLink>
+                            </li>
 
-                        <li className="nav-item">
-                            <NavLink activeClassName="is-active" className="nav-link" to="#about">
-                                About
-                            </NavLink>
-                        </li>
+                            <li className="nav-item">
+                                <NavLink activeClassName="is-active" className="nav-link" to="/events">
+                                    Events
+                                </NavLink>
+                            </li>
 
-                        <li className="nav-item">
-                            <NavLink activeClassName="is-active" className="nav-link" to="/events">
-                                Events
-                            </NavLink>
-                        </li>
+                            <li className="nav-item">
+                                <NavLink activeClassName="is-active" className="nav-link" to="/">
+                                    Contact
+                                </NavLink>
+                            </li>
+                        </ul>
 
-                        <li className="nav-item">
-                            <NavLink activeClassName="is-active" className="nav-link" to="/">
-                                Contact
-                            </NavLink>
-                        </li>
-                    </ul>
+                    </div >
+                    :
+                    <div className="mobile-nav-right">
 
+                        <ul className='mobile-nav-items'>
+                            <li className="nav-item">
+                                <NavLink activeClassName="is-active" className="nav-link" to="/">Home</NavLink>
+                            </li>
 
-                </div >
+                            <li className="nav-item">
+                                <NavLink activeClassName="is-active" className="nav-link" to="#about">
+                                    About
+                                </NavLink>
+                            </li>
+
+                            <li className="nav-item">
+                                <NavLink activeClassName="is-active" className="nav-link" to="/events">
+                                    Events
+                                </NavLink>
+                            </li>
+
+                            <li className="nav-item">
+                                <NavLink activeClassName="is-active" className="nav-link" to="/">
+                                    Contact
+                                </NavLink>
+                            </li>
+                        </ul>
+
+                    </div >
+                }
+                <div onClick={() => setShowNav(!showNav)} className='hamburger' >
+                    {showNav ? <AiOutlineClose /> : <GiHamburgerMenu />}
+                </div>
 
 
             </div >
