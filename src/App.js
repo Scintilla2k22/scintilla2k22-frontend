@@ -17,7 +17,7 @@ function App() {
     getUpcommingEventList(eventContextDispatch);
     getLiveEvents(eventContextDispatch);
     getEndedEvents(eventContextDispatch);
-    
+
 
   }, []);
 

@@ -46,7 +46,7 @@
             cursor: pointer;
 
             .nav-item{
-                margin: 0 20px;
+                margin: 0 10px;
                 transition: all 300ms ease-in-out;
                 cursor: pointer;
                 font-weight: bold;
@@ -65,3 +65,14 @@
 }
 
 }
+
+
+.is-active{
+    color:rgb(255, 0, 89);
+    transform:  translateY(4px);
+}
+
+.nav-link{
+    color: white;
+}
+

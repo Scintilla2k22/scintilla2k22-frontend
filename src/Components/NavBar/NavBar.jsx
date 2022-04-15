@@ -13,15 +13,32 @@ function NavBar() {
 
                 <div className="nav-right">
                     <ul className='nav-items'>
-                        <NavLink className="" to="/"><li className="nav-item">Home</li></NavLink>
+                        <li className="nav-item">
+                            <NavLink activeClassName="is-active" className="nav-link" to="/">Home</NavLink>
+                        </li>
 
-                        <li className="nav-item">About</li>
-                        <li className="nav-item">Events</li>
-                        <li className="nav-item">Contact</li>
+                        <li className="nav-item">
+                            <NavLink activeClassName="is-active" className="nav-link" to="#about">
+                                About
+                            </NavLink>
+                        </li>
+
+                        <li className="nav-item">
+                            <NavLink activeClassName="is-active" className="nav-link" to="/events">
+                                Events
+                            </NavLink>
+                        </li>
+
+                        <li className="nav-item">
+                            <NavLink activeClassName="is-active" className="nav-link" to="/">
+                                Contact
+                            </NavLink>
+                        </li>
+
                     </ul>
-                </div>
-            </div>
-        </div>
+                </div >
+            </div >
+        </div >
     )
 }
 
