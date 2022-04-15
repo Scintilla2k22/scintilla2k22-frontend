@@ -17,12 +17,12 @@ function App() {
     getUpcommingEventList(eventContextDispatch);
     getLiveEvents(eventContextDispatch);
     getEndedEvents(eventContextDispatch);
-
+    
 
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" >
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<Events />} />

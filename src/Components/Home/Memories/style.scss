@@ -3,9 +3,17 @@
     min-height: 100vh;
     height: auto;
     text-align: center;
-    font-family: var(--fest-font);
     color: white;
     margin-top: 100px;
+    position: relative;
+
+    .planet{
+        position: absolute;
+        left: 10%;
+        top: 30%;
+        transform: scale(6);
+        opacity: 0.4;
+    }
     h2{
     font-size: 4rem;
 
@@ -13,4 +21,14 @@
     .memories-gradient{
 
     }
+}
+
+
+@media (max-width : 900px) {
+        .memories-box{
+
+            .planet{
+                transform: scale(3);
+            }
+        }
 }
