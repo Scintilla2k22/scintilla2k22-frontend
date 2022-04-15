@@ -4,6 +4,8 @@ import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu, } from "react-icons/gi";
 
 import { NavLink } from "react-router-dom"
+import SideNav from './SideNav';
+
 
 function NavBar() {
 
@@ -44,33 +46,7 @@ function NavBar() {
 
                     </div >
                     :
-                    <div className="mobile-nav-right">
-
-                        <ul className='mobile-nav-items'>
-                            <li className="nav-item">
-                                <NavLink activeClassName="is-active" className="nav-link" to="/">Home</NavLink>
-                            </li>
-
-                            <li className="nav-item">
-                                <NavLink activeClassName="is-active" className="nav-link" to="#about">
-                                    About
-                                </NavLink>
-                            </li>
-
-                            <li className="nav-item">
-                                <NavLink activeClassName="is-active" className="nav-link" to="/events">
-                                    Events
-                                </NavLink>
-                            </li>
-
-                            <li className="nav-item">
-                                <NavLink activeClassName="is-active" className="nav-link" to="/">
-                                    Contact
-                                </NavLink>
-                            </li>
-                        </ul>
-
-                    </div >
+                    <SideNav />
                 }
                 <div onClick={() => setShowNav(!showNav)} className='hamburger' >
                     {showNav ? <AiOutlineClose /> : <GiHamburgerMenu />}

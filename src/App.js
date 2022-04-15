@@ -7,7 +7,7 @@ import { EventContext, EventContextProvider } from "./context";
 import { getUpcommingEventList, getLiveEvents, getEndedEvents, getEventList } from "./context/action";
 import { useEffect, useContext } from "react";
 import Home from "./Pages/home";
-import Events from './Components/events/Events'
+import Event from "./Pages/event";
 
 function App() {
   const { state, eventContextDispatch } = useContext(EventContext);
@@ -25,8 +25,8 @@ function App() {
     <div  >
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/events/eventpage" element={<EventPage />} />
+        <Route path="/events" element={<EventList/>} />
+        <Route path="/event/info" element={<Event />} />
       </Routes>
     </div>
   );
