@@ -23,7 +23,7 @@ code {
 
 
   --pr_bg:#012A4A;
-  --sc_bg:#F2E9E4;
+  --sc_bg:#010015;
   --pr_color: #000;
   --sc_color: #fff;
   --color_purple:#4D194D;
@@ -31,6 +31,7 @@ code {
   --color_silver:#C9ADA7;
   --color_gray:#4A4E69;
   --color_pink : #ed196b;
+  --color_grey : #9ba0ab;
 
   --pr_font : 'Rock 3D', cursive;
   /* --pr_font : 'Ananda','Namaste',Regular */
@@ -71,6 +72,12 @@ code {
   height: 5px;
 }
 
+
+.heading{
+  font-family: var(--fest-font);
+  color: white;
+  font-size: 3rem;
+}
 
 
 /* Track */
