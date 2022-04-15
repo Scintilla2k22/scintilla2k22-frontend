@@ -5,6 +5,7 @@ import Memories from '../Components/Home/Memories/Memories'
 import EventsRow from '../Components/EventList/EventsRow'
 import EventRowSection from '../Components/EventList/EventRowSection'
 import NavBar from '../Components/NavBar/NavBar'
+import Contact from '../Components/Contactus/Contact'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Memories />
       <EventRowSection />
+      <Contact />
     </div>
   )
 }
