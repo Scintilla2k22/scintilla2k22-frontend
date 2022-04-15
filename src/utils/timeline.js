@@ -31,26 +31,26 @@ Solo, duo and group dance can be performed under each category.
     
 
     cls: "cicada",
-    // left: (
-    //   <>
-    //     {" "}
-    //     <div
-    //       style={{
-    //         width: "100%",
-    //         height: "100%",
-    //         display: "grid",
-    //         placeItems: "center",
-    //       }}
-    //       className="logoDesign"
-    //     >
-    //       <img
-    //         style={{ width: "100%" }}
-    //         src={`${loc}/image/webd.png`}
-    //         alt="LOGO "
-    //       />
-    //     </div>{" "}
-    //   </>
-    // ),
+    left: (
+      <>
+        {" "}
+        <div
+          style={{
+            width: "100%",
+            height: "100%",
+            display: "grid",
+            placeItems: "center",
+          }}
+          className="logoDesign"
+        >
+          <img
+            style={{ width: "100%" }}
+            src={`${loc}/image/sci-assets/dance.svg`}
+            alt="LOGO "
+          />
+        </div>{" "}
+      </>
+    ),
     style: {
       color: {
         bg: "#ed196b",
@@ -91,23 +91,23 @@ Solo, duo and group dance can be performed under each category.
   
 
     cls: "cicada",
-    // left: <>
-    //   <div
-    //     style={{
-    //       width: "80%",
-    //       height: "100%",
-    //       display: "grid",
-    //       placeItems: "center",
-    //     }}
-    //     className="logoDesign"
-    //   >
-    //     <img
-    //       style={{ width: "100%" }}
-    //       src={`${loc}/image/gambit.png`}
-    //       alt="LOGO "
-    //     />
-    //   </div>
-    // </>,
+    left: <>
+      <div
+        style={{
+          width: "80%",
+          height: "100%",
+          display: "grid",
+          placeItems: "center",
+        }}
+        className="logoDesign"
+      >
+        <img
+          style={{ width: "100%" }}
+          src={`${loc}/image/sci-assets/singing.svg`}
+          alt="LOGO "
+        />
+      </div>
+    </>,
     style: {
       color: {
         bg: "#159D8C",
@@ -145,6 +145,23 @@ Solo, duo and group dance can be performed under each category.
     The best amongst all will be chosen as the winner of the competition.
    `,
  
+   left: <>
+   <div
+     style={{
+       width: "80%",
+       height: "100%",
+       display: "grid",
+       placeItems: "center",
+     }}
+     className="logoDesign"
+   >
+     <img
+       style={{ width: "100%" }}
+       src={`${loc}/image/sci-assets/singing.svg`}
+       alt="LOGO "
+     />
+   </div>
+ </>,
     cls: "ideathon",
     style: {
       color: {
@@ -180,7 +197,23 @@ Solo, duo and group dance can be performed under each category.
     desc: `Participants from different years and branches will be delivering their poems. The
     best amongst all will be chosen as the winner of the competition`,
   
-
+    left: <>
+      <div
+        style={{
+          width: "80%",
+          height: "100%",
+          display: "grid",
+          placeItems: "center",
+        }}
+        className="logoDesign"
+      >
+        <img
+          style={{ width: "100%" }}
+          src={`${loc}/image/sci-assets/poetry.svg`}
+          alt="LOGO "
+        />
+      </div>
+    </>,
     cls: "monkey",
     style: {
       color: {
@@ -220,6 +253,25 @@ Solo, duo and group dance can be performed under each category.
     standup comedy, playing instruments, singing, dancing etc.`,
  
     cls: "blind",
+    left: <>
+    <div
+      style={{
+        width: "80%",
+        height: "100%",
+        display: "grid",
+        placeItems: "center",
+        transform : "scale(2)"
+
+      }}
+      className="logoDesign"
+    >
+      <img
+        style={{ width: "100%" }}
+        src={`${loc}/image/sci-assets/talenthunt.svg`}
+        alt="LOGO "
+      />
+    </div>
+  </>,
     style: {
       color: {
         bg: "#159D8C",
@@ -256,24 +308,25 @@ Solo, duo and group dance can be performed under each category.
     different movies and would be performing a short scene of the actor from that movie.`,
 
  
-    // left: (<>
-    //   {" "}
-    //   <div
-    //     style={{
-    //       width: "100%",
-    //       height: "100%",
-    //       display: "grid",
-    //       placeItems: "center",
-    //     }}
-    //     className="logoDesign"
-    //   >
-    //     <img
-    //       style={{ width: "100%" }}
-    //       src={`${loc}/image/knowbuddy.png`}
-    //       alt="LOGO "
-    //     />
-    //   </div>{" "}
-    // </>),
+    left: (<>
+      {" "}
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          display: "grid",
+          placeItems: "center",
+          transform : "scale(2)"
+        }}
+        className="logoDesign"
+      >
+        <img
+          style={{ width: "100%" }}
+          src={`${loc}/image/sci-assets/poetry.svg`}
+          alt="LOGO "
+        />
+      </div>{" "}
+    </>),
     cls: "css-battle",
     style: {
       color: {
@@ -313,25 +366,25 @@ Solo, duo and group dance can be performed under each category.
     declared the winner of the competition.`,
  
     cls: "backtrack",
-    // left: (
-    //   <>
-    //     <div
-    //       style={{
-    //         width: "100%",
-    //         height: "100%",
-    //         display: "grid",
-    //         placeItems: "center",
-    //       }}
-    //       className="logoDesign"
-    //     >
-    //       <img
-    //         style={{ width: "100%" }}
-    //         src={`${loc}/image/mathemati.png`}
-    //         alt="LOGO "
-    //       />
-    //     </div>
-    //   </>
-    // ),
+    left: (
+      <>
+        <div
+          style={{
+            width: "100%",
+            height: "100%",
+            display: "grid",
+            placeItems: "center",
+          }}
+          className="logoDesign"
+        >
+          <img
+            style={{ width: "100%" }}
+            src={`${loc}/image/sci-assets/poetry.svg`}
+            alt="LOGO "
+          />
+        </div>
+      </>
+    ),
     style: {
       color: {
         bg: "#FE74AE",
@@ -367,7 +420,25 @@ Solo, duo and group dance can be performed under each category.
 
     desc: `In this competition, participants will be performing face art on the faces of their fellows. The
     best artist will be chosen to be the winner of the competition`,
-
+    left: (
+      <>
+        <div
+          style={{
+            width: "100%",
+            height: "100%",
+            display: "grid",
+            placeItems: "center",
+          }}
+          className="logoDesign"
+        >
+          <img
+            style={{ width: "100%" }}
+            src={`${loc}/image/sci-assets/painting.svg`}
+            alt="LOGO "
+          />
+        </div>
+      </>
+    ),
  
 
     cls: "cicada",
@@ -405,29 +476,28 @@ Solo, duo and group dance can be performed under each category.
     desc: `In this competition, participants will be participating in groups. The main task of the
     competition will be designing the frames and props with which people can take
     pictures with. The best amongst them will be chosen as the winner.`,
+ 
 
-    rules: [
+    left: (<>
+      {" "}
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          display: "grid",
+          placeItems: "center",
+        transform : "scale(2)"
 
-    ],
-
-    // left: (<>
-    //   {" "}
-    //   <div
-    //     style={{
-    //       width: "100%",
-    //       height: "100%",
-    //       display: "grid",
-    //       placeItems: "center",
-    //     }}
-    //     className="logoDesign"
-    //   >
-    //     <img
-    //       style={{ width: "100%" }}
-    //       src={`${loc}/image/techtalk.png`}
-    //       alt="LOGO "
-    //     />
-    //   </div>{" "}
-    // </>),
+        }}
+        className="logoDesign"
+      >
+        <img
+          style={{ width: "100%" }}
+          src={`${loc}/image/sci-assets/framedesining.svg`}
+          alt="LOGO "
+        />
+      </div>{" "}
+    </>),
     cls: "css-battle",
     style: {
       color: {
@@ -435,6 +505,7 @@ Solo, duo and group dance can be performed under each category.
         primary: "#ed196b",
         secondary: "#ed196b",
         tertiary: "",
+
       },
     },
     hexas: ["silver", "silver", "silver"],
@@ -463,7 +534,25 @@ Solo, duo and group dance can be performed under each category.
     competition.
     `,
 
-    
+    left: (<>
+      {" "}
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          display: "grid",
+          placeItems: "center",
+          transform : "scale(2)"
+        }}
+        className="logoDesign"
+      >
+        <img
+          style={{ width: "100%" }}
+          src={`${loc}/image/sci-assets/treasurehunt.svg`}
+          alt="LOGO "
+        />
+      </div>{" "}
+    </>),
     cls: "css-battle",
     style: {
       color: {

@@ -1,7 +1,7 @@
 .event-container{
 
     width: 100%;
-    min-height: 100vh;
+    // min-height: 100vh;
     height: auto ;
     scroll-snap-align: start;  
     background-color: transparent;
@@ -215,15 +215,17 @@
 
     .event-container{
 
-        .hexa-box:nth-child(2){
-            transform: scale(4);
+        .planet:nth-child(2){
+            transform: scale(2);
+            top: 5%;
         }
 
-        .hexa-box:nth-child(3){
-            transform: scale(2);
+        .planet:nth-child(3){
+            top: 60%;
+            transform: scale(1.5);
         }
-        .hexa-box:nth-child(4){
-            transform: scale(2);
+        .planet:nth-child(4){
+            transform: scale(1);
         }
     }
     .left{
