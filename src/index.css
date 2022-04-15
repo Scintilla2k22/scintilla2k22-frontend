@@ -23,6 +23,7 @@ code {
 
   --pr_bg:#012A4A;
   --sc_bg:#010015;
+  --tr_bg : #121212;
   --pr_color: #000;
   --sc_color: #fff;
   --color_purple:#4D194D;
@@ -47,6 +48,8 @@ code {
 /* Gradients */
 --pr_gradient :  linear-gradient(180deg, rgba(1, 42, 74, 0.93) 38.14%, #000000 93.87%);
 --sc_gradient:linear-gradient(76.89deg, rgba(10, 3, 55, 0.93) 33.77%, rgba(83, 3, 43, 0.93) 73.71%);
+
+--background-noise: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjc1IiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iLjA1IiBkPSJNMCAwaDMwMHYzMDBIMHoiLz48L3N2Zz4=);
 }
 
 a{
@@ -98,6 +101,45 @@ a{
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Event Page  */
+
+.eventHead{
+  font-size: 4rem;
+  font-family: var(--pr_font);
+
+}
+
+.eventDesc{
+  font-size: 2rem;
+  font-family: var(--sr_font);
+  font-weight: semibold;
+}
+
+.eventTime{
+  font-size: 1.5rem;
+  font-family: var(--sr_font);
+
+}
+
 
 
 @media (max-width : 700px) {

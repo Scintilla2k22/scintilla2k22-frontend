@@ -1,5 +1,5 @@
 import React from 'react'
-import EventCardNew from '../../EventList/EventCardNew'
+import EventCardNew from '../../EventList/Extras/EventCardNew'
 import EventsRow from '../../EventList/EventsRow'
 import './eventcarousel.css'
 
