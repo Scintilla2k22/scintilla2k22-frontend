@@ -8,6 +8,8 @@ import NavBar from '../Components/NavBar/NavBar'
 import Contact from '../Components/Contactus/Contact'
 
 import Events from '../Components/Home/Events/Events'
+import Footer from '../Components/Footer/Footer';
+
 export default function Home() {
   return (
     <div style={{ backgroundColor: "#010015" }} >
@@ -16,8 +18,9 @@ export default function Home() {
       <About />
       <Memories />
       {/* <EventRowSection /> */}
-      <Contact />
       <Events />
+      <Contact />
+      <Footer />
     </div>
   )
 }
