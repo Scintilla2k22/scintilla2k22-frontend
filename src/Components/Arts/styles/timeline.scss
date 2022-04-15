@@ -10,7 +10,7 @@
     overflow: hidden;
   z-index: 4;
   position: relative;
-  height: 100% !important;
+  height: 100vh !important;
   }
   
   .block {
@@ -183,7 +183,7 @@
 
 .wrapper {
 
-  height: 100% !important;
+  height: 700px !important;
 
   .ripple-box{
     transform: translateY(-10px) scale(0.3);
