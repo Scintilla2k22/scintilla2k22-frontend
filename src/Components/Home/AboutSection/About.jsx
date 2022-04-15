@@ -5,10 +5,10 @@ import Ripples from "../../Arts/ripples";
 
 export default function About() {
   return (
-    <div className="container-fluid  about-container">
+    <div id='about' className="container-fluid  about-container">
       <div className="row">
         <div className="col-md-6">
-     
+
         </div>
         <div className="col-md-12 col-lg-6 d-flex justify-content-center">
           <div className="  about-text">
@@ -44,8 +44,8 @@ export default function About() {
         </div>
       </div>
       {
-            [2,2,2].map((id) => <Planet /> )
-        }
+        [2, 2, 2].map((id) => <Planet />)
+      }
 
     </div>
   );
