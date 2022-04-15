@@ -7,7 +7,7 @@ import EventRowSection from '../Components/EventList/EventRowSection'
 
 export default function Home() {
   return (
-    <div style={{ backgroundColor : "#010015"}} >
+    <div style={{ backgroundColor : "#010015" , overflow : "hidden"}}  >
         <HeadSection />
         <About />
         <Memories />

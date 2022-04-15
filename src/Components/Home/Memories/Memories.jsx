@@ -5,7 +5,7 @@ import './style.scss'
 export default function Memories() {
   return (
     <div className='memories-box' >
-        <h2 className='heading'>
+        <h2 className='heading1'>
             Glimpse of 2K19
         </h2>
         <Timeline />
