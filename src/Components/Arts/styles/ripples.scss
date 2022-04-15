@@ -7,7 +7,8 @@
     transform: scale(2);
     border: 4px solid rgba(127, 24, 105, 0.694);
     position: relative;
-
+    display: grid;
+    place-items: center;
     &::before, &::after{
         
         content:'' ;
@@ -29,6 +30,8 @@
         animation: ripple-wave 2s ease-in infinite;
     }
 
+
+
     @keyframes ripple-wave {
 
         100%{
@@ -36,4 +39,17 @@
         }
         
     }
+
+    
+}
+
+.ripple-box .image{
+    width: 100px;
+    height: 100px;
+    background-color: red !important;
+    border-radius: 50%;
+    z-index: 4;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    display:none;
 }

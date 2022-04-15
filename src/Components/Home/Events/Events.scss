@@ -1,0 +1,290 @@
+.event-container{
+
+    width: 100%;
+    // min-height: 100vh;
+    height: auto ;
+    scroll-snap-align: start;  
+    background-color: transparent;
+    color: white;
+    position: relative;
+    margin-top: 120px;
+    .row{
+        height: 100%;
+        z-index: 10;
+        position: relative;
+    }
+    .planet{
+        opacity: 0.5;
+        position: absolute;
+    }
+    .planet:nth-child(4){
+        top : 30%;
+        left : 5%;
+        transform: scale(4);
+
+    }
+    .planet:nth-child(2){
+        right : 15%;
+        transform: scale(3);
+        top: 60%;
+    }
+    .planet:nth-child(3){
+        left : 30%;
+        transform: scale(2);
+        top: 60%;
+
+    }
+
+    .subtitle{
+        text-align: center;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+      
+}
+
+.events>h1{
+    color:#fff;
+    font-size: 4rem;
+    text-align: center;
+    font-family: var(--pr_font);
+    // font-weight: bold;
+}
+
+.right{
+
+    h2{
+        font-weight: bold;
+        font-family: var(--pr_font) ;
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    .time, .venue {
+        font-size: 1.5rem;
+        text-align: center;
+        font-family: var(--se_font) ;
+        font-weight: 640;
+    }
+
+    .desc{
+        font-size : 1.1rem;
+        text-align  : left;
+        margin : 10px auto auto auto ;
+        font-family: var(--se_font) ;
+
+    }
+
+    .cord-block{
+        // margin-top: 10px;
+        padding: 5px 10px;
+        font-family: var(--se_font) ;
+
+        p{
+            font-size : 1.3rem;
+            font-weight: 650;
+
+        }
+        .cord{
+
+            // list-style: none;
+            display: flex;
+            flex-direction: column;
+            
+            li{
+                // padding : 2px;
+                font-size: 1.1rem;
+            }
+        }
+
+    }
+
+}
+
+
+
+.ideathon{
+
+    background: var(--color-dark);
+    
+    // #bulb-1, #bulb-2, #bulb-2{
+    // border: 1px solid black;
+    //     animation: twinkle 4s  2s infinite forward ;
+    // }
+    #bulb-2 .light path, #bulb-2 .flash path{
+        animation-delay: 2s   !important;
+        animation-duration: 4s;
+    }
+    #bulb-3  .light path, #bulb-3 .flash path{
+        animation-delay:  4s !important  ;
+        animation-duration: 2s;
+    }
+    .left {
+
+
+        .light path{
+            fill : transparent;
+             animation: twinkle 3s  infinite  ;
+
+        }    
+         .flash path  {
+            animation: twinkle 3s   infinite  ;
+            filter : drop-shadow(4px 4px 10px rgba(255, 255, 255, 0.587))
+
+        }    
+        .bulb:hover .flash path, .bulb:hover .light path {
+            fill :#ee9520bd;
+
+        }
+        
+
+    }
+
+    .right{
+        h2{
+            color : white;
+        }
+    }
+
+    @keyframes twinkle {
+
+        0%{   
+            fill : transparent; 
+        }
+        20%{
+            fill :#EE9620;
+
+        }
+        
+    }
+
+}
+
+.css-battle{
+
+    .left{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        // background-color: red;
+        div{
+            // background-color: green;
+        }
+    }
+}
+
+
+
+.cicada {
+
+    #item-1, #item-2, #item-3, #items-4{
+
+        animation : move-circular 5s  ease-in-out infinite;
+        transform-origin:center;
+        transform-box: border-box;
+
+    }
+
+    @keyframes move-circular {
+        
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+
+        }
+    }
+}
+//  
+
+.blind {
+
+    .left{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+
+
+@media (max-width : 1000px) {
+
+    .event-container{
+
+        .planet:nth-child(2){
+            transform: scale(2);
+            top: 5%;
+        }
+
+        .planet:nth-child(3){
+            top: 60%;
+            transform: scale(1.5);
+        }
+        .planet:nth-child(4){
+            transform: scale(1);
+        }
+    }
+    .left{
+        display: none !important;
+    }  
+  
+.right{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size: 2rem;
+    }
+    .time, .venue {
+        font-size: 1.2rem;
+        text-align: center;
+        font-family: var(--se_font) ;
+
+    }
+
+    .desc{
+        font-size : 1.1rem;
+        text-align  : center;
+        margin : 10px auto auto auto ;
+        font-family: var(--se_font) ;
+
+    }
+
+    .cord-block{
+
+        p{
+            font-size : 1.2rem;
+            font-weight: 650;
+            text-align: center;
+        }
+        .cord{
+            text-align: center;
+            padding: 0px;
+
+            li{
+                font-size: 1.1rem;
+            }
+        }
+
+    }
+
+}
+     
+
+
+}
+
+
+.blind{
+
+  svg{
+      transform: scale(1.7);
+  }
+
+}
+
+ 
