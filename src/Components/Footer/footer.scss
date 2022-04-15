@@ -3,16 +3,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    min-height: 100px;
+    height: auto;
+    flex-wrap: wrap;
     color: #fff;
     background-color: #000;
     padding: 20px 10px;
-    // width: 80%;
-    margin: auto;
     margin-top: 30px;
 
     .footer-left{
-        flex: 1;
+        // flex: 1;
         text-align: center;
         
         span{

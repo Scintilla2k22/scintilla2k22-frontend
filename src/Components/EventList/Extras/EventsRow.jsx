@@ -1,6 +1,6 @@
 import React from "react";
 import Planet from "../Arts/planet";
-import EventCardNew from "./EventCardNew";
+import EventCardNew from "./Extras/EventCardNew";
 import "./eventNew.scss";
 export default function EventsRow() {
   return (

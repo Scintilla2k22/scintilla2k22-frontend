@@ -66,7 +66,7 @@ Solo, duo and group dance can be performed under each category.
 
 
   {
-    id: 4,
+    id: 2,
     title: "Singing Competition",
     desc : `Participants from different years and branches would be competing with each other.
     The most melodious amongst all of the participants will be announced as the winner.
@@ -176,7 +176,7 @@ Solo, duo and group dance can be performed under each category.
 
 
   {
-    id: 2,
+    id: 4,
     title: "Poetry Competition",
     venue: "CSE Department",
     date: "18 April 2022",
@@ -229,7 +229,7 @@ Solo, duo and group dance can be performed under each category.
 
 
   {
-    id: 7,
+    id: 5,
     title: "Talent Hunt",
     subtile: `Coding with a twist`,
     venue: "CSE Department",
@@ -285,7 +285,7 @@ Solo, duo and group dance can be performed under each category.
 
 
   {
-    id: 10,
+    id: 6,
     title: `Campus Diva`,
     subtitle: `The more you know, the more you grow`,
     venue: "CSE Department",
@@ -342,7 +342,7 @@ Solo, duo and group dance can be performed under each category.
 
 
   {
-    id: 8,
+    id: 7,
     title: "Roadies",
     subtitle: `Be a wise guy, Give math a try`,
     venue: "CSE Department",
@@ -399,7 +399,7 @@ Solo, duo and group dance can be performed under each category.
 
 
   {
-    id: 9,
+    id: 8,
     title: "Face Painting",
     subtitle: `Clear vision holds the key.`,
     venue: "CSE Department",
@@ -454,7 +454,7 @@ Solo, duo and group dance can be performed under each category.
   },
 
   {
-    id: 11,
+    id: 9,
     title: "Frame Designing",
     subtitle: `Guidance is so much more important than speed`,
     venue: "CSE Department",
@@ -511,7 +511,7 @@ Solo, duo and group dance can be performed under each category.
     hexas: ["silver", "silver", "silver"],
   },
   {
-    id: 12,
+    id: 10,
     title: "Treasure Hunt",
     venue: "CSE Department",
     date: "18 April 2022",

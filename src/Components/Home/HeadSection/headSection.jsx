@@ -1,7 +1,11 @@
 import React from "react";
 import "./headSection.scss";
 import Particles from "react-tsparticles";
-import { particlePreset, particleStatic, particleTwinkle } from "../../../utils/particle";
+import {
+  particlePreset,
+  particleStatic,
+  particleTwinkle,
+} from "../../../utils/particle";
 import { asset } from "../../../utils";
 import Asteroids from "../../Arts/asteroids";
 
@@ -16,31 +20,23 @@ const HeadSection = () => {
   return (
     <>
       <section className="head-container ">
-
-        <a href="https://www.youtube.com/channel/UC-NYMUWDLUwxruNUzpOzO4g/about?app=desktop" target="_blank">
-          <button className="button" >Explore Treasure</button>
-        </a>
-
-
         <div className="head-dust">
-          {/* <Particles
-          id="tsparticles"
-          init={particlesInit}
-          loaded={particlesLoaded}
-          options={{ ...particlePreset }}
-        /> */}
-
+          <Particles
+            id="tsparticles"
+            init={particlesInit}
+            loaded={particlesLoaded}
+            options={{ ...particlePreset }}
+          />
         </div>
 
         <div className="head-bg">
-          {
-            [1, 2, 4, 5, 1, 2, 4, 5, 1, 2, 4].map(() => <Asteroids />)
-          }
+          {[1, 2, 4, 5, 1, 2, 4, 5, 1, 2, 4].map(() => (
+            <Asteroids />
+          ))}
           {/* <div className="head-planet"></div> */}
           <img src={`${asset}/image/head-left-image.png`} />
 
           <img src={`${asset}/image/head-right-image.png`} />
-
         </div>
         <div className="row head-content m-0">
           <div className="col-md-12 col-md-6 head-left ">
@@ -57,22 +53,21 @@ const HeadSection = () => {
                 <span>a</span>
               </div>
 
-              <p className="text-2">
-                2K22
-              </p>
+              <p className="text-2">2K22</p>
+              <a
+                href="https://www.youtube.com/channel/UC-NYMUWDLUwxruNUzpOzO4g/about?app=desktop"
+                target="_blank"
+              >
+                <button className="teaser">Explore Treasure</button>
+              </a>
             </div>
           </div>
         </div>
-        <div className="col-md-6  head-right">
-
-
-
-        </div>
-
+        <div className="col-md-6  head-right"></div>
       </section>
-      {/* <div className="wave-box bg-light">
+      <div className="wave-box bg-light">
       <img src = {`${asset}/image/curves.svg`} />
-  </div> */}
+  </div>
     </>
   );
 };
