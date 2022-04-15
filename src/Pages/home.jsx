@@ -12,8 +12,8 @@ import Footer from '../Components/Footer/Footer';
 
 export default function Home() {
   return (
-    <div style={{ backgroundColor: "#010015" }} >
-      {/* <NavBar /> */}
+    <div style={{ backgroundColor: "var(--sc_bg)" }} >
+      <NavBar />
       <HeadSection />
       <About />
       <Memories />

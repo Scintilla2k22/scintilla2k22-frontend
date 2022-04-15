@@ -8,7 +8,7 @@ function NavBar() {
         <div className="nav">
             <div className="navbar">
                 <div className="nav-left">
-                    <h3>ScinTilla 2K22</h3>
+                    <h3>BTKIT Dwarahat</h3>
                 </div>
 
                 <div className="nav-right">

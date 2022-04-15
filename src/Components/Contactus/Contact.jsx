@@ -1,20 +1,15 @@
 import React from 'react';
 import './contact.scss';
 import Profile from './Profile';
-
+import { coordinators } from '../../utils/coords';
 
 function Contact() {
     return (
         <div className="contact">
-            <h2 className='heading2'>Contact Us</h2>
+            <h2 className='heading1'>Contact Us</h2>
             <div className="profiles">
-                <Profile />
-                <Profile />
-                <Profile />
-                <Profile />
-                <Profile />
-                <Profile />
-                <Profile />
+
+                { coordinators && coordinators.map(dat => <Profile data = {dat} />)}
             </div>
         </div>
     )

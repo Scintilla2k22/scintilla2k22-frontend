@@ -316,7 +316,7 @@ Solo, duo and group dance can be performed under each category.
           height: "100%",
           display: "grid",
           placeItems: "center",
-          transform : "scale(2)"
+          transform : "scale(1.5)"
         }}
         className="logoDesign"
       >

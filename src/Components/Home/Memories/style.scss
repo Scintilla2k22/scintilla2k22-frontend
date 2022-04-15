@@ -1,6 +1,6 @@
 .memories-box{
     width: 100%;
-    min-height: 100vh;
+    min-height: 500px;
     height: auto;
     text-align: center;
     color: white;
@@ -24,9 +24,11 @@
 }
 
 
-@media (max-width : 900px) {
+@media (max-width : 800px) {
         .memories-box{
-            max-height: 300px !important;
+
+            max-height: 200px !important;
+
             .planet{
                 transform: scale(3);
             }
