@@ -1,14 +1,16 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { EventContext } from '../../context'
-import './event.css'
-import EventCard from './EventCard'
+import '../Home/HeadSection/headSection.scss'
 import EventSection from './EventSection'
+import './event.css'
+
 
 function EventList() {
 
     const [up_event, setUpEvent] = useState([])
     const [live_event, setLiveEvent] = useState([])
     const [ended_event, setEndedEvent] = useState([])
+
     const { state: {
         upcomming_events,
         live_events,
@@ -28,9 +30,9 @@ function EventList() {
         <div className='event'>
             <h1>Events</h1>
             <div className='event-type  m-container'>
-                <EventSection data={live_event} title='live' />
-                <EventSection data={up_event} title='upcoming' />
-                <EventSection data={ended_event} title='ended' />
+                {live_event.length > 0 && <EventSection data={live_event} title='live' />}
+                {up_event.length > 0 && <EventSection data={up_event} title='upcoming' />}
+                {ended_event.length > 0 && <EventSection data={ended_event} title='ended' />}
             </div>
         </div >
     )

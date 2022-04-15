@@ -1,0 +1,111 @@
+// @import "bourbon";
+// @import "neat";
+
+$base-duration: 500ms;
+
+// Colors
+$color-1: #2c3e50;
+$color-2: #1abc9c;
+$color-3: #2ecc71;
+
+// Breakpoints
+$sm: new-breakpoint(min-width 320px);
+$med: new-breakpoint(min-width 768px);
+$lg: new-breakpoint(min-width 1024px);
+
+// *, *:before, *:after {
+// 	box-sizing: border-box;
+// 	outline: none;
+// }
+
+
+.card-block {
+    min-height:340px ;
+    min-width: 250px;
+    margin: 10px 30px 10px 5px;
+    box-shadow: rgb(0, 0, 0) 0px 2px 8px 0px;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 244px;
+	height: 400px;
+	border-radius: 10px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	overflow: hidden;
+
+	&:hover {
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		img {
+			transform: scale(1.25);
+		}
+
+		.card-info  {
+			top: 45%;
+		}
+	}
+
+	h1 {
+		position: absolute;
+		top: 50px;
+		left: 20px;
+		margin: 0;
+		padding: 0;
+		color: white;
+		font-size: 2rem;
+		font-weight: 100;
+		line-height: 1;
+        text-transform: uppercase;
+	}
+
+	img {
+		height: 100%;
+		transition: 0.25s;
+	}
+	.card-info {
+		position: absolute;
+		top: 82%;
+		left: 0;
+		width: 100%;
+		margin: 0;
+		padding: 30px;
+		background-color: rgba(black,0.85);
+		box-shadow: 0 0 20px rgba(black,0.4);
+		color: white;
+		line-height: 1;
+		transition: 0.25s;
+        height: 350px;
+
+		h3 {
+			margin: 0 0 20px;
+			padding: 0;
+		}
+
+		p {
+			font-size: 14px;
+			line-height: 1.75;
+		}
+
+		button {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 10px 0 0;
+			padding: 10px 30px;
+			background-color: $color-2;
+			border: none;
+			border-radius: 5px;
+			color: white;
+			font-size: 14px;
+
+            a{
+                color: white;
+            }
+		}
+	}
+}

@@ -50,6 +50,10 @@ code {
 
 }
 
+a{
+  text-decoration: none;
+}
+
 .m-container{
   width: 80%;
   margin: auto;
