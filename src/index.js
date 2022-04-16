@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 import { EventProvider } from "./context";
 import { createBrowserHistory } from 'history';  
 
@@ -12,7 +12,7 @@ import { createBrowserHistory } from 'history';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter history = {history} basename='/'   >
+    <BrowserRouter history = {history} basename={process.env.PUBLIC_URL}   >
       <EventProvider>
         <App />
       </EventProvider>
