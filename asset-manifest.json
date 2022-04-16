@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/scintilla2k22-frontend/static/css/main.f7100ab2.css",
-    "main.js": "/scintilla2k22-frontend/static/js/main.a7723a15.js",
+    "main.css": "/scintilla2k22-frontend/static/css/main.d180ff70.css",
+    "main.js": "/scintilla2k22-frontend/static/js/main.2002e5b6.js",
     "static/js/787.cda612ba.chunk.js": "/scintilla2k22-frontend/static/js/787.cda612ba.chunk.js",
     "static/media/moonTexture.jpg": "/scintilla2k22-frontend/static/media/moonTexture.95e57cef3002848e980e.jpg",
     "index.html": "/scintilla2k22-frontend/index.html",
-    "main.f7100ab2.css.map": "/scintilla2k22-frontend/static/css/main.f7100ab2.css.map",
-    "main.a7723a15.js.map": "/scintilla2k22-frontend/static/js/main.a7723a15.js.map",
+    "main.d180ff70.css.map": "/scintilla2k22-frontend/static/css/main.d180ff70.css.map",
+    "main.2002e5b6.js.map": "/scintilla2k22-frontend/static/js/main.2002e5b6.js.map",
     "787.cda612ba.chunk.js.map": "/scintilla2k22-frontend/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7100ab2.css",
-    "static/js/main.a7723a15.js"
+    "static/css/main.d180ff70.css",
+    "static/js/main.2002e5b6.js"
   ]
 }
