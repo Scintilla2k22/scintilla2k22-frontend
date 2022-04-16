@@ -1,61 +1,77 @@
-import React, { useState } from 'react'
-import './style.scss'
-import { AiOutlineClose } from "react-icons/ai";
-import { GiHamburgerMenu, } from "react-icons/gi";
+import React, { useState } from "react";
+import "./style.scss";
+import { GiHamburgerMenu } from "react-icons/gi";
 
-import { NavLink } from "react-router-dom"
-import SideNav from './SideNav';
-
+import { NavLink } from "react-router-dom";
+import SideNav from "./SideNav";
 
 function NavBar() {
+  const [showNav, setShowNav] = useState(false);
 
-    const [showNav, setShowNav] = useState(false);
+  return (
+    <div className="nav ">
+      {!showNav ? (
+        <div className="navbar">
+          <div className="nav-left">
+            {/* <h3>BTKIT Dwarahat</h3> */}
+          </div>
 
-    return (
-        <div className="nav">
-            <div className="navbar">
-                <div className="nav-left">
-                    <h3>BTKIT Dwarahat</h3>
-                </div>
+          <div className="nav-right">
+            <ul className="nav-items">
+              <li className="nav-item">
+                <NavLink
+                  activeClassName="is-active"
+                  className="nav-link"
+                  to="/"
+                >
+                  Home
+                </NavLink>
+              </li>
 
-                {!showNav ?
-                    <div className='nav-right'>
-                        <ul className='nav-items'>
-                            <li className="nav-item">
-                                <NavLink activeClassName="is-active" className="nav-link" to="/">Home</NavLink>
-                            </li>
+              <li className="nav-item">
+                <NavLink
+                  activeClassName="is-active"
+                  className="nav-link"
+                  to="#about"
+                >
+                  About
+                </NavLink>
+              </li>
 
-                            <li className="nav-item">
-                                <NavLink activeClassName="is-active" className="nav-link" to="#about">
-                                    About
-                                </NavLink>
-                            </li>
+              <li className="nav-item">
+                <NavLink
+                  activeClassName="is-active"
+                  className="nav-link"
+                  to="/events"
+                >
+                  Events
+                </NavLink>
+              </li>
 
-                            <li className="nav-item">
-                                <NavLink activeClassName="is-active" className="nav-link" to="/events">
-                                    Events
-                                </NavLink>
-                            </li>
+              <li className="nav-item">
+                <NavLink
+                  activeClassName="is-active"
+                  className="nav-link"
+                  to="/"
+                >
+                  Contact
+                </NavLink>
+              </li>
+            </ul>
+          </div>
 
-                            <li className="nav-item">
-                                <NavLink activeClassName="is-active" className="nav-link" to="/">
-                                    Contact
-                                </NavLink>
-                            </li>
-                        </ul>
-
-                    </div >
-                    :
-                    <SideNav />
-                }
-                <div onClick={() => setShowNav(!showNav)} className='hamburger' >
-                    {showNav ? <AiOutlineClose /> : <GiHamburgerMenu />}
-                </div>
-
-
-            </div >
-        </div >
-    )
+          <div onClick={() => setShowNav(!showNav)} className="hamburger">
+            <GiHamburgerMenu />
+          </div>
+        </div>
+      ) : (
+        <>
+          
+          <SideNav setShowNav = { setShowNav} state = {showNav} />
+        </>
+      )}
+    </div>
+  );
 }
 
-export default NavBar
+export default NavBar;

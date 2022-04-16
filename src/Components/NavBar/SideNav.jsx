@@ -3,13 +3,24 @@ import React from 'react'
 import './style.scss'
 
 import './sidenav.css'
+import { AiOutlineClose } from "react-icons/ai";
 
 import { NavLink } from "react-router-dom"
 
-function SideNav() {
+function SideNav(props) {
+    const{
+        setShowNav,
+        state
+    }  = props;
+
+    const handleClick =  () => {
+        setShowNav(!state)
+    }
     return (
         <div className="mobile-nav-right">
-
+            <div onClick={ () =>  handleClick()}  className="hamburger">
+            <AiOutlineClose />
+          </div>
             <ul className='mobile-nav-items'>
                 <li className="nav-item">
                     <NavLink activeClassName="is-active" className="nav-link" to="/">Home</NavLink>

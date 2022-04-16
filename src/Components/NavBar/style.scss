@@ -1,10 +1,10 @@
 
 .nav{
     width: 100%;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
-    z-index: 2000;
+    z-index: 20;
     // overflow: hidden;
 
 .navbar{
@@ -50,7 +50,7 @@
 
         .hamburger{
             font-weight: bold;
-            display: none;
+            // display: none;
             font-size: 2rem;
 
         }
@@ -78,50 +78,7 @@
         }
     }
 
-    @media screen and (max-width: 1050px) {
-        .nav-left{
-            h3{
-                font-size: 1.1rem;
-            }
-        }
-        
-        
-        .nav-right{
-            display: none;
-
-        }
-
-        .mobile-nav-right{
-            display: block;
-            position: absolute;
-            top: 64px;
-            right: -20%;
-            background: #0f1e33;
-            width: 50vw;
-            height: 100vh;
-            padding: 30px 30px 0 0;
-            transition: all 200ms ease-in-out;
-
-
-            .mobile-nav-items{
-                display: block;
-                flex-direction: column;
-                width: 100%;
-
-                .nav-item{
-                     .nav-link{
-                         width: 80%;
-                        text-align: center;
-                    }
-                }
-            }
-
-        }
-    
-        .hamburger{
-            display: block;
-        }
-    }
+  
 }
 }
 
@@ -135,6 +92,77 @@
     color: white;
 }
 
+
+@media screen and (max-width: 1050px) {
+    .nav-left{
+        h3{
+            font-size: 1.1rem;
+        }
+    }
+    
+    
+    .nav-right{
+        display: none !important;
+
+    }
+
+    .mobile-nav-right{
+        display: grid;
+        place-items: center;
+        position: absolute;
+        background: #0f1e33;
+        top: 0px;
+        width: 100vw;
+        height: 100vh;
+        // padding: 30px 30px 0 0;
+        transition: all 1s ease-in-out;
+        
+        .hamburger{
+      
+            position: absolute; 
+            display: block !important;
+            z-index: 40 !important;
+            font-size: 2rem;
+            right: 20px;
+            top: 20px;
+            
+            color: white;
+            
+        }
+      
+        .mobile-nav-items{
+            display: block;
+            flex-direction: column;
+            width: 100%;
+            font-size: 1.5rem;
+            .nav-item{
+                 .nav-link{
+                     width: 80%;
+                    text-align: center;
+                    
+                    &:hover{
+                        color : var(--color_pink);
+                    }
+                }
+
+
+            }
+        }
+
+    }
+
+    .hamburger{
+      
+        position: absolute; 
+        display: block !important;
+        z-index: 40 !important;
+        font-size: 1.5rem;
+        right: 0px;
+        color: white;
+        
+    }
+
+}
 
 
 
