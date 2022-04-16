@@ -9,6 +9,8 @@ import { useEffect, useContext } from "react";
 import Home from "./Pages/home";
 import Event from "./Pages/event";
 
+const root_path = process.env.PUBLIC_URL
+
 function App() {
   const { state, eventContextDispatch } = useContext(EventContext);
 
@@ -24,9 +26,9 @@ function App() {
   return (
     <div  >
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/events" element={<EventList/>} />
-        <Route path="/event/info" element={<Event />} />
+        <Route path= {`${root_path}/`} element={<Home />} />
+        <Route path= {`${root_path}/events`} element={<EventList/>} />
+        <Route path= {`${root_path}/event/info`} element={<Event />} />
       </Routes>
     </div>
   );
