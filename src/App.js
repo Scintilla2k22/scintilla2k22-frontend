@@ -9,6 +9,7 @@ import { useEffect, useContext } from "react";
 import Home from "./Pages/home";
 import Event from "./Pages/event";
 
+
 function App() {
   const { state, eventContextDispatch } = useContext(EventContext);
 
@@ -22,13 +23,11 @@ function App() {
   }, []);
 
   return (
-    <div  >
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<EventList/>} />
         <Route path="/event/info" element={<Event />} />
       </Routes>
-    </div>
   );
 }
 
