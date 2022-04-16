@@ -20,6 +20,8 @@ const HeadSection = () => {
   return (
     <>
       <section className="head-container ">
+
+
         <div className="head-dust">
           <Particles
             id="tsparticles"
@@ -58,7 +60,7 @@ const HeadSection = () => {
                 href="https://www.youtube.com/channel/UC-NYMUWDLUwxruNUzpOzO4g/about?app=desktop"
                 target="_blank"
               >
-                <button className="teaser">Explore Treasure</button>
+                <button className="teaser">Explore Teaser</button>
               </a>
             </div>
           </div>
@@ -66,8 +68,8 @@ const HeadSection = () => {
         <div className="col-md-6  head-right"></div>
       </section>
       <div className="wave-box bg-light">
-      <img src = {`${asset}/image/curves.svg`} />
-  </div>
+        <img src={`${asset}/image/curves.svg`} />
+      </div>
     </>
   );
 };

@@ -50,15 +50,15 @@ export default function EventBox(props) {
             </div>
           </div>
         </div>
-        {
-          hexas.map((clr, ind) => {
-            return (
-              <Planet  />
-            )
-  
-          })
-        }
-      </section >
-    )
-  
+      {
+        hexas.map((clr, ind) => {
+          return (
+            <Planet />
+          )
+
+        })
+      }
+    </section >
+  )
+
 };

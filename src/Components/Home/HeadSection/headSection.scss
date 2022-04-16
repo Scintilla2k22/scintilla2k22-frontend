@@ -110,15 +110,16 @@
     .head-container{
       
         .head-left{
-            align-items: center;
+            // align-items: center;
             justify-content: center;
             display: flex !important;
         }
 
         .head-box{
-            top: 0%;
+            top: 10%;
             left: 0%;
             position: relative;
+
             .text-1{
                 color: white;
                 font-size: 3rem;
