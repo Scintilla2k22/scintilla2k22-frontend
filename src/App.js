@@ -8,6 +8,7 @@ import { getUpcommingEventList, getLiveEvents, getEndedEvents, getEventList } fr
 import { useEffect, useContext } from "react";
 import Home from "./Pages/home";
 import Event from "./Pages/event";
+import ListOfEvent from "./Components/ListOfEvent/ListOfEvent";
 
 function App() {
   const { state, eventContextDispatch } = useContext(EventContext);
@@ -25,7 +26,7 @@ function App() {
     <div  >
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/events" element={<EventList/>} />
+        <Route path="/events" element={<ListOfEvent />} />
         <Route path="/event/info" element={<Event />} />
       </Routes>
     </div>
@@ -33,3 +34,5 @@ function App() {
 }
 
 export default App;
+
+        // <Route path="/events" element={<EventList />} />
