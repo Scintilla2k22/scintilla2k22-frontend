@@ -20,13 +20,16 @@ $lg: new-breakpoint(min-width 1024px);
 
 
 .card-block {
-    min-height:340px ;
-    min-width: 250px;
-    margin: 10px 30px 10px 5px;
+
+	min-height: 300px;
+	min-width: 300px;
+    height:340px ;
+    width: 250px;
+    margin: 10px 20px 10px 5px;
     box-shadow: rgb(0, 0, 0) 0px 2px 8px 0px;
     transition: all 300ms ease-in-out;
-    cursor: pointer;
 
+    cursor: pointer;
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -38,6 +41,14 @@ $lg: new-breakpoint(min-width 1024px);
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 	overflow: hidden;
 
+	&::after{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(61, 2, 35, 0.694);
+	}
+
 	&:hover {
 		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 		img {
@@ -46,19 +57,19 @@ $lg: new-breakpoint(min-width 1024px);
 
 		.card-info  {
 			top: 45%;
+
 		}
 	}
 
 	h1 {
 		position: absolute;
-		top: 50px;
-		left: 20px;
-		margin: 0;
+		 
 		padding: 0;
 		color: white;
 		font-size: 2rem;
-		font-weight: 100;
+		font-weight: 600;
 		line-height: 1;
+		z-index: 10;
         text-transform: uppercase;
 	}
 
@@ -68,18 +79,28 @@ $lg: new-breakpoint(min-width 1024px);
 	}
 	.card-info {
 		position: absolute;
-		top: 82%;
+		top: 80%;
 		left: 0;
 		width: 100%;
 		margin: 0;
-		padding: 30px;
-		background-color: rgba(black,0.85);
-		box-shadow: 0 0 20px rgba(black,0.4);
+		padding: 10px;
+		background-color: rgb(15, 5, 12);
+		box-shadow: 0 0 20px rgba(black,1.4);
 		color: white;
 		line-height: 1;
 		transition: 0.25s;
         height: 350px;
+		z-index: 10;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		// justify-content: center;
 
+		svg{
+			color: var(--color_pink);
+			font-size: 3rem;
+			margin: 10px;
+		}
 		h3 {
 			margin: 0 0 20px;
 			padding: 0;
@@ -108,4 +129,16 @@ $lg: new-breakpoint(min-width 1024px);
             }
 		}
 	}
+}
+
+
+@media (max-width : 700px) {
+    
+    .card-block{
+
+    //    height: 350px !important;
+    //    width: 500px !important;
+
+    }
+
 }

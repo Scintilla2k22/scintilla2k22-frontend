@@ -1,0 +1,173 @@
+.event-page-parent{
+    width: 100%;
+    background:var(--sc_bg);
+    position: relative;
+    overflow: hidden;
+    .event-page-head{
+        height: 300px;
+        width: 100%;
+        padding: 40;
+        // background-color : #260226b3 ;
+        
+        .page-head-content{
+
+            padding: 20px;
+
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            // max-width: 600px;
+            width: 100%;
+
+            .eventDesc ,  .eventTime{
+                font-weight: 10;
+            }
+
+        }
+    }
+
+
+    .planet{
+        position: absolute !important;
+        opacity: 0.6;
+    }
+    
+    .planet:nth-of-type(2){
+        transform: scale(3);
+        top: 20%;
+        right: 10%;
+    }
+    
+    .planet:nth-of-type(3){
+        transform: scale(9.5);
+        top:50%;
+        left: 30%;
+
+    }
+    .planet:nth-of-type(1){
+        transform: scale(2);
+        top:10%;
+        left: 30%;
+
+    }
+
+    .planet:nth-of-type(4){
+        transform: scale(3);
+        bottom:10%;
+        right:  10%;
+
+    }
+}
+
+.event-type{
+    display: grid;
+    overflow:hidden  !important;
+    margin: auto;
+    grid-template-columns: 100%;
+    grid-row-gap: 100px;
+    place-items: center;
+    z-index: 10;
+    position: relative;
+
+
+}
+
+.event-list-container{
+    // overflow:hidden  !important;
+    width: 100%;
+    height: auto;
+    margin-bottom:25px ;
+    background-color: rgba(27, 8, 23, 0.637);
+    padding: 20px;
+    display: grid;
+    place-items: center;
+
+    h2{
+        padding: 20px;
+    }
+
+    
+
+.event-list{
+    display: flex;
+    align-items: flex-start;
+    width: 100% !important;
+    overflow-x: auto;
+
+}
+
+.event h1{
+    text-align: center;
+    color: var(--sc_color);
+    font-family: var(--fest-font);
+    font-size: 4rem;
+}
+
+.card{
+    min-height:340px ;
+    width: 250px;
+    margin: 10px 30px 10px 5px;
+    box-shadow: rgb(0, 0, 0) 0px 2px 8px 0px;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+    
+}
+
+.card:hover{
+    /* box-shadow: rgba(104, 104, 104, 0.25) 0px 6px 12px -2px, rgba(95, 95, 95, 0.3) 0px 3px 7px -3px; */
+    /* box-shadow: rgba(102, 102, 102) 0px 3px 8px; */
+transform: scale(1.05);
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    margin: auto;
+}
+
+.card-text{
+    white-space: nowrap; 
+  width: 200px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+//  Planets
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width : 1000px) {
+
+    .event-page-parent{
+
+        .planet:nth-of-type(1){
+            transform: scale(3);
+            top: 45%;
+        }
+        .planet:nth-of-type(2){
+            transform: scale(1);
+            top: 15%;
+        }
+
+        .planet:nth-of-type(3){
+            top: 60%;
+            transform: scale(1.5);
+        }
+        .planet:nth-of-type(4){
+            transform: scale(2);
+        }
+    }
+}
+
+

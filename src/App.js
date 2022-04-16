@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Switch, Route, Router } from "react-router-dom";
 import EventList from "./Components/EventList/EventList";
 import EventPage from "./Components/Eventpage/EventPage";
 import Header from "./Components/events/Events";
@@ -8,6 +8,8 @@ import { getUpcommingEventList, getLiveEvents, getEndedEvents, getEventList } fr
 import { useEffect, useContext } from "react";
 import Home from "./Pages/home";
 import Event from "./Pages/event";
+
+const root_path = process.env.PUBLIC_URL
 
 function App() {
   const { state, eventContextDispatch } = useContext(EventContext);
@@ -22,13 +24,11 @@ function App() {
   }, []);
 
   return (
-    <div  >
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/events" element={<EventList/>} />
-        <Route path="/event/info" element={<Event />} />
-      </Routes>
-    </div>
+      <Switch>
+        <Route path= {'/'} component={Home} />
+        <Route path= {`/events`} component={EventList} />
+        <Route path= {`/event/info`} component={Event} />
+      </Switch>
   );
 }
 

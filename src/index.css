@@ -50,6 +50,13 @@ code {
 --sc_gradient:linear-gradient(76.89deg, rgba(10, 3, 55, 0.93) 33.77%, rgba(83, 3, 43, 0.93) 73.71%);
 
 --background-noise: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjc1IiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iLjA1IiBkPSJNMCAwaDMwMHYzMDBIMHoiLz48L3N2Zz4=);
+
+/* Special Colors */
+
+--special_color : #ed196b;
+--special_hover_color : #7f0234;
+
+
 }
 
 a{
@@ -129,16 +136,67 @@ a{
 }
 
 .eventDesc{
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: var(--sr_font);
   font-weight: semibold;
 }
 
 .eventTime{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: var(--sr_font);
 
 }
+
+
+/* Wave Box */
+.wave-box{
+  background-color: transparent !important;
+  margin-top: -3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.wave-box   img{
+  width: 100%;
+background-color: transparent !important;
+
+}
+
+
+
+.specialText{
+
+  color: var(--special_color);
+}
+.specialText:hover{
+  transform: scale(1.1);
+  color: var(--special_color_hover);
+}
+
+
+
+
+
+
+
+/*  Teaser Button styling */
+
+.teaser{
+  border: none;
+  padding: 5px 12px;
+  border-radius: 40px;
+  color: white;
+  background: #7b4397;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      font-size: 1.2rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all 300ms ease-in-out;
+  
+}
+
+
 
 
 
@@ -148,3 +206,6 @@ a{
       font-size: 3rem !important;
     }
 }
+
+
+
