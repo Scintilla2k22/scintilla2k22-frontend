@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/scintilla2k22-frontend/static/css/main.6591000b.css",
+    "main.js": "/scintilla2k22-frontend/static/js/main.8dadc3a2.js",
+    "static/js/787.cda612ba.chunk.js": "/scintilla2k22-frontend/static/js/787.cda612ba.chunk.js",
+    "static/media/moonTexture.jpg": "/scintilla2k22-frontend/static/media/moonTexture.95e57cef3002848e980e.jpg",
+    "index.html": "/scintilla2k22-frontend/index.html",
+    "main.6591000b.css.map": "/scintilla2k22-frontend/static/css/main.6591000b.css.map",
+    "main.8dadc3a2.js.map": "/scintilla2k22-frontend/static/js/main.8dadc3a2.js.map",
+    "787.cda612ba.chunk.js.map": "/scintilla2k22-frontend/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6591000b.css",
+    "static/js/main.8dadc3a2.js"
+  ]
+}
