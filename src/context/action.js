@@ -71,7 +71,7 @@ export const getContestantOfEvent = (team_id) => async (dispatch) => {
   }
 };
 
-export const getTeamOfEvent = async (team_id) => async (dispatch) => {
+export const getTeamOfEvent  = async (dispatch, team_id) => {
   const response = axios({
     method: "get",
     url: `${get_team}/${team_id}/`,
