@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/scintilla2k22-frontend/static/css/main.d180ff70.css",
-    "main.js": "/scintilla2k22-frontend/static/js/main.2002e5b6.js",
-    "static/js/787.cda612ba.chunk.js": "/scintilla2k22-frontend/static/js/787.cda612ba.chunk.js",
-    "static/media/moonTexture.jpg": "/scintilla2k22-frontend/static/media/moonTexture.95e57cef3002848e980e.jpg",
-    "index.html": "/scintilla2k22-frontend/index.html",
-    "main.d180ff70.css.map": "/scintilla2k22-frontend/static/css/main.d180ff70.css.map",
-    "main.2002e5b6.js.map": "/scintilla2k22-frontend/static/js/main.2002e5b6.js.map",
-    "787.cda612ba.chunk.js.map": "/scintilla2k22-frontend/static/js/787.cda612ba.chunk.js.map"
+    "main.css": "/static/css/main.110a6884.css",
+    "main.js": "/static/js/main.4e917b4b.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/moonTexture.jpg": "/static/media/moonTexture.95e57cef3002848e980e.jpg",
+    "index.html": "/index.html",
+    "main.110a6884.css.map": "/static/css/main.110a6884.css.map",
+    "main.4e917b4b.js.map": "/static/js/main.4e917b4b.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d180ff70.css",
-    "static/js/main.2002e5b6.js"
+    "static/css/main.110a6884.css",
+    "static/js/main.4e917b4b.js"
   ]
 }
