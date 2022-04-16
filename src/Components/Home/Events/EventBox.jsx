@@ -2,6 +2,8 @@ import React from 'react'
 import Planet from '../../Arts/planet';
 import './Events.scss'
 import Profile from '../../Contactus/Profile';
+import { Link } from 'react-router-dom';
+
 export default function EventBox(props) {
 
   
@@ -10,7 +12,7 @@ export default function EventBox(props) {
       id,
       subtitle,
       venue,
-      date,
+      date = "Not Scheduled",
       time,
       coordinators,
       desc,
@@ -28,17 +30,23 @@ export default function EventBox(props) {
           <div className="col-sm-12 col-md-12 col-lg-7 right">
             <div className="d-flex flex-column p-3 justify-content-center align-item-center">
               <h2>{title}</h2>
-              {subtitle && <h6 style={{ color: style.color.primary }} className="subtitle"> "{subtitle}"</h6>}
+              {date && <h6 style={{ color: style.color.primary }} className="subtitle"> "{date}"</h6>}
               <p className="desc">{desc}</p>
+              <Link to = {"/event/info"} >
+                <button className="teaser position-relative mx-auto my-4">Checkout</button>
+                </Link>
               <div className=" cord-block ">
                 <p style={{ color: style.color.primary }} > Coordinators : </p>
+                
                 <div className="cord">
                   {coordinators &&
                     coordinators.map((co) => (
                       <Profile data = {co} />
                     ))}
                 </div>
+                
               </div>
+
             </div>
           </div>
         </div>

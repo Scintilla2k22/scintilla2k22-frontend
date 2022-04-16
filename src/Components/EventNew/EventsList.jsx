@@ -5,8 +5,8 @@ import {BsCircle} from 'react-icons/bs'
 import {IoIosOptions} from 'react-icons/io'
 import TeamList from './TeamList'
 
-export default function EventList() {
-
+export default function EventList(props) {
+  
   return (
     <div className=' events-page-list'>
         <div className = 'event-list-blur'></div>
@@ -20,7 +20,7 @@ export default function EventList() {
             <hr></hr>
         </div>
 
-        <TeamList />
+        <TeamList  />
     </div>
   )
 }
