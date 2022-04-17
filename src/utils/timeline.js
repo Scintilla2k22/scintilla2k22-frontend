@@ -12,15 +12,38 @@ export const Timeline = [
     time: "10 pm",
     coordinators: [
       {
-        name: "Ayush Bisht",
-        branch: "CSE",
-        year: "3rd",
-      },
-      {
-        name: "Mohd Anas",
-        branch: "CSE",
-        year: "3rd",
-      },
+        id : 1,
+        name : "Aparna Joshi",
+        gender : 'female',
+        branch : 'CSE',
+        year : '3rd year',
+        contact : '7060326613',
+        committe : "Dance"
+
+    },
+    {
+        id : 2,
+        name : "Gaurav Kumar ",
+        gender : 'male',
+        branch : 'CSE',
+        year : '3rd year',
+        contact : 'XX-XX-XX-XX',
+        committe : "Dance"
+
+
+    },
+
+    {
+        id : 3,
+        name : "Anjali Devrari",
+        gender : 'female',
+        branch : 'CSE',
+        year : '3rd year',
+        contact : '9119710171',
+        committe : "Dance"
+
+
+    },
     ],
     desc: ` Participants from different years and branches would be competing with each to win
 the competition. The Competition will be in three categories of dance i.e, Western,
@@ -77,15 +100,39 @@ Solo, duo and group dance can be performed under each category.
     time: "10 pm",
     coordinators: [
       {
-        name: "Ayush Bisht",
-        branch: "CSE",
-        year: "3rd",
-      },
-      {
-        name: "Mohd Anas",
-        branch: "CSE",
-        year: "3rd",
-      },
+        id : 4,
+        name : "Ishika Pant",
+        gender : 'female',
+        branch : 'CSE',
+        year : '4th year',
+        contact : 'XX-XX-XX-XX',
+        committe : "Singing"
+
+    },
+
+    {
+        id : 5,
+        name : "Shubham Tripathi",
+        gender : 'male',
+        branch : 'CSE',
+        year : '3rd year',
+        contact : '7055024508',
+        committe : "Singing"
+
+
+    },
+
+    {
+        id : 6,
+        name : "Aanchal Budiyal",
+        gender : 'female',
+        branch : 'CSE',
+        year : '3rd year',
+        contact : 'XX-XX-XX-XX',
+        committe : "Singing"
+      
+
+    },
     ],
  
   
@@ -129,15 +176,40 @@ Solo, duo and group dance can be performed under each category.
     time: "10 pm",
     coordinators: [
       {
-        name: "Ayush Bisht",
-        branch: "CSE",
-        year: "3rd",
-      },
-      {
-        name: "Mohd Anas",
-        branch: "CSE",
-        year: "3rd",
-      },
+        id : 17,
+        name : "Rishabh Saxena",
+        gender : 'male',
+        branch : 'CSE',
+        year : '3rd year',
+        contact : '9997907591',
+        committe : "SKIT"
+       
+
+    },
+    {
+        id : 18,
+        name : "Abhishek Yadav",
+        gender : 'male',
+        branch : 'CSE',
+        year : '3rd year',
+        contact : '7055566622',
+        committe : "SKIT"
+        
+       
+
+    },
+    {
+        id : 19,
+        name : "Saarim Zaid ",
+        gender : 'male',
+        branch : 'CSE',
+        year : '3rd year',
+        contact : '7300923828',
+        committe : "SKIT"
+        
+       
+
+    },
     ],
 
     desc: `Drama is the specific mode of fiction represented in performance: a play, mime,
@@ -182,16 +254,28 @@ Solo, duo and group dance can be performed under each category.
     date: "18 April 2022",
     time: "10 pm",
     coordinators: [
-      {
-        name: "Ayush Bisht",
-        branch: "CSE",
-        year: "3rd",
-      },
-      {
-        name: "Mohd Anas",
-        branch: "CSE",
-        year: "3rd",
-      },
+      {   
+        id : 7,
+        name : "Mayank Thapliyal",
+        gender : 'male',
+        branch : 'CSE',
+        year : '3rd year',
+        contact : '6399932775',
+        committe : "Poetry"
+
+    },
+
+    {
+        id : 8,
+        name : "Abhishek Yadav",
+        gender : 'male',
+        branch : 'CSE',
+        year : '3rd year',
+        contact : '7055566622',
+        committe : "Poetry"
+
+
+    },
     ],
 
     desc: `Participants from different years and branches will be delivering their poems. The
@@ -237,15 +321,42 @@ Solo, duo and group dance can be performed under each category.
     time: "10 pm",
     coordinators: [
       {
-        name: "Ayush Bisht",
-        branch: "CSE",
-        year: "3rd",
-      },
-      {
-        name: "Mohd Anas",
-        branch: "CSE",
-        year: "3rd",
-      },
+        id : 23,
+        name : "Diksha Adhikari",
+        gender : 'female',
+        branch : 'CSE',
+        year : '3rd year',
+        contact : 'XX-XX-XX-XX',
+        committe : "BTKIT got talent"
+        
+       
+
+    },
+    {
+        id : 24,
+        name : "Dheeraj Budhlakoti",
+        gender : 'male',
+        branch : 'CSE',
+        year : '3rd year',
+        contact : '9639260117',
+        committe : "BTKIT got talent"
+       
+        
+       
+
+    },
+    {
+        id : 25,
+        name : "Gaurav Kumar",
+        gender : 'male',
+        branch : 'CSE',
+        year : '3rd year',
+        contact : 'XX-XX-XX-XX',
+        committe : "BTKIT got talent"
+        
+       
+
+    },
     ],
 
     desc: `This competition is beyond the boundation of specific art forms. In this, participants
@@ -293,15 +404,27 @@ Solo, duo and group dance can be performed under each category.
     time: "10 pm",
     coordinators: [
       {
-        name: "Ayush Bisht",
-        branch: "CSE",
-        year: "3rd",
-      },
-      {
-        name: "Mohd Anas",
-        branch: "CSE",
-        year: "3rd",
-      },
+        id : 15,
+        name : "Shraddha Sah",
+        gender : 'female',
+        branch : 'CSE',
+        year : '3rd year',
+        contact : '7310874328',
+        committe : "Campus diva , Short Film Making"
+       
+
+    },
+    {
+        id : 16,
+        name : "Kriti Sharma",
+        gender : 'female',
+        branch : 'CSE',
+        year : '3rd year',
+        contact : '8126705777',
+        committe : "Campus diva"
+        
+
+    },
     ],
 
     desc: ` In this competition participants will be mimicking their chosen characters from
@@ -407,15 +530,27 @@ Solo, duo and group dance can be performed under each category.
     time: "10 pm",
     coordinators: [
       {
-        name: "Ayush Bisht",
-        branch: "CSE",
-        year: "3rd",
-      },
-      {
-        name: "Mohd Anas",
-        branch: "CSE",
-        year: "3rd",
-      },
+        id : 9,
+        name : "Ankita Bohra",
+        gender : 'male',
+        branch : 'CSE',
+        year : '3rd year',
+        contact : '8057238063',
+        committe : "Face painting"
+
+    },
+
+    {
+        id : 10,
+        name : "Saurav Joshi",
+        gender : 'male',
+        branch : 'CSE',
+        year : '3rd year',
+        contact : 'XX-XX-XX-XX',
+        committe : "Face painting"
+       
+
+    },
     ],
 
     desc: `In this competition, participants will be performing face art on the faces of their fellows. The
@@ -462,15 +597,29 @@ Solo, duo and group dance can be performed under each category.
     time: "10 pm",
     coordinators: [
       {
-        name: "Ayush Bisht",
-        branch: "CSE",
-        year: "3rd",
-      },
-      {
-        name: "Mohd Anas",
-        branch: "CSE",
-        year: "3rd",
-      },
+        id : 26,
+        name : "Payal Chuphal",
+        gender : 'female',
+        branch : 'CSE',
+        year : '3rd year',
+        contact : '9997597921',
+        committe : "Frame Designing"
+        
+       
+
+    },
+    {
+        id : 27,
+        name : "Aanchal Budiyal",
+        gender : 'female',
+        branch : 'CSE',
+        year : '3rd year',
+        contact : 'XX-XX-XX-XX',
+        committe : "Frame Designing"
+        
+       
+
+    },
     ],
 
     desc: `In this competition, participants will be participating in groups. The main task of the

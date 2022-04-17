@@ -7,6 +7,12 @@ import TeamList from './TeamList'
 
 export default function EventList(props) {
   
+  const{
+    data, 
+    type
+  } = props;
+
+
   return (
     <div className=' events-page-list'>
         <div className = 'event-list-blur'></div>
@@ -20,7 +26,7 @@ export default function EventList(props) {
             <hr></hr>
         </div>
 
-        <TeamList  />
+        <TeamList  data = {data} type = {type}  />
     </div>
   )
 }

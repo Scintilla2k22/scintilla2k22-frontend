@@ -2,6 +2,7 @@ import React from "react";
 import "./style.scss";
 import { asset } from "../../utils";
 import Asteroids from "../Arts/asteroids";
+import Planet from "../Arts/planet";
 export default function EventHead(props) {
   const {} = props.data || {};
   return (
@@ -11,6 +12,8 @@ export default function EventHead(props) {
         { 
             [2,2,2,2,2].map(( ind ) => <Asteroids />)
         }
+      {[2,3,4].map( ind => <Planet /> )}
+
       <div className="row p-3">
         <div className="col-lg-4 event-page-header-left">
             <img src = {`${asset}/image/sci-assets/dance.svg`}  />
@@ -24,6 +27,7 @@ export default function EventHead(props) {
           </div>
         </div>
       </div>
+
     </div>
   );
 }

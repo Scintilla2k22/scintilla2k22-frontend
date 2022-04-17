@@ -9,4 +9,4 @@ export const filter_event_type =  `${event_api}/filter_event_type`
 export const filter_events =  `${event_api}/filter_events/`
 
 export const get_participants =  `${participants_api}/get_contestants`
-export const get_team =  `${participants_api}/participants/get_team`
+export const get_team =  `${participants_api}/get_team`

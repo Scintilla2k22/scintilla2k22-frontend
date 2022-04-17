@@ -5,7 +5,7 @@ import { coordinators } from '../../utils/coords';
 
 function Contact() {
     return (
-        <div className="contact">
+        <div className="contact" id = "contact_" >
             <h2 className='heading1'>Contact Us</h2>
             <div className="profiles">
 

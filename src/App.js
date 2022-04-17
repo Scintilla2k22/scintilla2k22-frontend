@@ -10,6 +10,7 @@ import Home from "./Pages/home";
 import Event from "./Pages/event";
 import ListOfEvent from "./Components/ListOfEvent/ListOfEvent";
 
+
 function App() {
   const { state, eventContextDispatch } = useContext(EventContext);
 
@@ -23,13 +24,11 @@ function App() {
   }, []);
 
   return (
-    <div  >
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/events" element={<ListOfEvent />} />
-        <Route path="/event/info" element={<Event />} />
-      </Routes>
-    </div>
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route path="/events" element={<ListOfEvent />} />
+      <Route exact={true} path="/event/info/:id/:type" element={<Event />} />
+    </Routes>
   );
 }
 

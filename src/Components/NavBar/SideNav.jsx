@@ -4,6 +4,7 @@ import './style.scss'
 
 import './sidenav.css'
 import { AiOutlineClose } from "react-icons/ai";
+import { HashLink } from 'react-router-hash-link';
 
 import { NavLink } from "react-router-dom"
 
@@ -27,10 +28,10 @@ function SideNav(props) {
                 </li>
 
                 <li className="nav-item">
-                    <NavLink activeClassName="is-active" className="nav-link" to="#about">
+                    <HashLink activeClassName="is-active" className="nav-link" to="#about">
                         About
-                    </NavLink>
-                </li>
+                    </HashLink>
+                </li >
 
                 <li className="nav-item">
                     <NavLink activeClassName="is-active" className="nav-link" to="/events">
@@ -39,11 +40,11 @@ function SideNav(props) {
                 </li>
 
                 <li className="nav-item">
-                    <NavLink activeClassName="is-active" className="nav-link" to="/">
+                    <HashLink activeClassName="is-active" className="nav-link" to="#contact_">
                         Contact
-                    </NavLink>
-                </li>
-            </ul>
+                    </HashLink>
+                </li >
+            </ul >
 
         </div >
 
