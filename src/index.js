@@ -13,11 +13,11 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   
   <React.StrictMode>
-    <HashRouter  >
+    <BrowserRouter  >
       <EventProvider>
         <App />
       </EventProvider>
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

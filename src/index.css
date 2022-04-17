@@ -195,6 +195,12 @@ background-color: transparent !important;
   transition: all 300ms ease-in-out;
   
 }
+.teaser:hover{
+  color:rgb(1, 50, 101);
+  transform: translateY(-3px);
+
+
+}
 
 
 

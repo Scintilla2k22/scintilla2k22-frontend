@@ -5,7 +5,12 @@
     background: -webkit-gradient(linear,left top,left bottom,from(transparent),to(rgba(0,0,0,.5))),var(--background-noise);
      background: linear-gradient(transparent 0,rgba(0,0,0,.5) 100%),var(--background-noise);
     position: relative;
+    overflow: hidden;
 
+    .row{
+        position: relative;
+        z-index: 5 !important;
+    }
     .head-blur{
         position: absolute;
         width: 100%;
@@ -13,6 +18,10 @@
         background-color: rgb(77, 20, 121);
     }
 
+
+    
+    
+    
     .event-page-header-left{
 
         position: relative;
@@ -47,6 +56,86 @@
         }
 
     }
+
+}
+
+
+
+.planet{
+    position: absolute;
+    opacity: 0.3;
+
+
+}
+
+.planet:nth-child(9){
+    transform: scale(4);
+    right: 5% ;
+    top: 10% !important;
+}
+.planet:nth-child(7){
+    transform: scale();
+    left:  30% ;
+    top: 70%;
+}
+.planet:nth-child(8){
+    transform: scale(2);
+    left: 10% ;
+    // top: 95%;
+}
+
+
+
+
+@media (max-width : 1000px) {
+
+.event-page-header{
+
+    .event-page-header-left{
+        
+        display: none;
+    }
+
+
+    .event-page-header-right{
+        padding: 5px 0px 5px 20px;
+        .heading2{
+            font-size: 2.3rem;
+        }
+        p{
+            font-size: 1.3rem;
+            padding: 4px;
+        }
+    }
+}
+
+.events-page-list{
+
+    .toolbar{
+        padding: 15px 5px !important;
+        height: 80px !important;
+        svg{
+            font-size: 2.5rem !important;
+        }
+    }
+}
+
+.planet:nth-child(9){
+    transform: scale(2);
+    right: 5% ;
+    top: 10% !important;
+}
+.planet:nth-child(7){
+    transform: scale(1);
+    left:  30% ;
+    top: 70%;
+}
+.planet:nth-child(8){
+    transform: scale(2);
+    left: 10% ;
+    // top: 95%;
+}
+
 
 }
 
@@ -108,7 +197,7 @@
             }
             div svg:nth-of-type(1){
                 font-size: 3rem;
-                color: #1ed760;
+                color: red;
             }
 
             div svg:nth-of-type(2){
@@ -137,16 +226,20 @@
 .team-list-container{
 
 
-    width: 100%;
+    width: 100% !important;
     height: auto;
+    overflow-x: auto;
+
     .table{ 
 
-        
+        position: relative;
+        min-width: 600px;   
+
         th{
         color: white;
         font-family: var(--sr_font);
-        font-size: 1.5rem;
-        font-weight: 200;
+        font-size: 1.2rem;
+        font-weight: 400;
         min-width: 30px !important;
         text-overflow: ellipsis !important;
 
@@ -165,6 +258,27 @@
             color : var(--color_pink) !important;
         }
     }
+
+
+    &::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+      }
+    /* Track */
+&::-webkit-scrollbar-track {
+    background: var(--color_pink); 
+  }
+   
+  /* Handle */
+ &::-webkit-scrollbar-thumb {
+    background: var(--color_purple); 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
     
 

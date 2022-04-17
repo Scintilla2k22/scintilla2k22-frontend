@@ -24,9 +24,9 @@ function App() {
 
   return (
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/events" element={<EventList/>} />
-        <Route path="/event/info" element={<Event />} />
+        <Route  exact path="/" element={<Home />} />
+        <Route exact = {true} path="/events" element={<EventList/>} />
+        <Route exact = {true} path="/event/info/:id/:type" element={<Event />} />
       </Routes>
   );
 }

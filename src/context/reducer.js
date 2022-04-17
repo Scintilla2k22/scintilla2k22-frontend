@@ -35,6 +35,7 @@ export const eventReducer = (state = initialState, action) => {
       };
 
     case "GET_SELECTED_EVENT_INFO":
+      console.log("reducer", payload)
       return {
         ...state,
         selected_event_info: payload,

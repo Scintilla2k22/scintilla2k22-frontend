@@ -11,73 +11,41 @@ function useQuery() {
 
 export default function TeamList(props) {
 
-  const{
-    id = 1, 
-    type = 0
-  } = props;
+ const{
+   data = [],
+   type
+ } = props;
 
-  const [data, setData] = useState([])
-  const query = useQuery()
-
-  console.log("query" , props)
-  const { state: {
-    selected_team_info,
-  }, eventContextDispatch } = useContext(EventContext);
-
-
-  useEffect( () => {
-
-    if(type == 0)
-    getContestantOfEvent(eventContextDispatch,id)
-    else
-    getTeamOfEvent(eventContextDispatch, id)
-
-  }, [])
-
-  useEffect(() => {
-
-    setData(selected_team_info)
-
-  }, [selected_team_info]);
+ console.log(" table data", data)
 
   return (
     <div className=' container team-list-container' >
-        <table class="table ">
+        <table class="table  " width={"100%"} >
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Team Name</th>
-      <th scope="col">Description</th>
+      <th scope="col"> { type == 0 ? "Name" : "Team"}</th>
+      <th scope="col">{ type == 0 ? "Branch" : "# Members"}</th>
       <th scope="col">Joined On</th>
-      <th scope="col"># Members</th>
+      <th scope="col">Score</th>
 
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
 
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      <td>@mdo</td>
+    { data.length > 0 && data.map((item, ind) => {
 
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-      <td>@mdo</td>
-
-    </tr>
+      return(
+        <tr>
+        <th scope="row">{ind + 1}</th>
+        <td>{type==0 ? item.name : item.t_name }</td>
+        <td>{ type==0 ? `${item.branch}, ${item.year} year` : item.contestants.length } </td>
+        <td> {item.created_on} </td>
+        <td>{item.score }</td>        
+      </tr>
+      )
+    })}
+  
   </tbody>
 </table>
     </div>

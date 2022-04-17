@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import { HashLink } from 'react-router-hash-link';
 import { NavLink } from "react-router-dom";
 import SideNav from "./SideNav";
 
@@ -29,13 +29,13 @@ function NavBar() {
               </li>
 
               <li className="nav-item">
-                <NavLink
+                <HashLink
                   activeClassName="is-active"
                   className="nav-link"
-                  to="#about"
+                  to="/#about"
                 >
                   About
-                </NavLink>
+                </HashLink>
               </li>
 
               <li className="nav-item">
@@ -49,13 +49,13 @@ function NavBar() {
               </li>
 
               <li className="nav-item">
-                <NavLink
+                <HashLink
                   activeClassName="is-active"
                   className="nav-link"
-                  to="/"
+                  to="/#contact_"
                 >
                   Contact
-                </NavLink>
+                </HashLink>
               </li>
             </ul>
           </div>

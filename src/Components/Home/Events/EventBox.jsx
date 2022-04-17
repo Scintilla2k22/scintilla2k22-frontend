@@ -20,7 +20,8 @@ export default function EventBox(props) {
       style,
       cls = "default",
       left,
-      hexas
+      hexas,
+      type = 0
     } = props.data;
   
     return (
@@ -30,13 +31,13 @@ export default function EventBox(props) {
           <div className="col-sm-12 col-md-12 col-lg-7 right">
             <div className="d-flex flex-column p-3 justify-content-center align-item-center">
               <h2>{title}</h2>
-              {date && <h6 style={{ color: style.color.primary }} className="subtitle"> "{date}"</h6>}
+              {date && <h6 style={{ color: style.color.primary }} className="subtitle"> {date}</h6>}
               <p className="desc">{desc}</p>
-              <Link to = {"/event/info"} >
+              <Link to = {`/event/info/${id}/${type}`} >
                 <button className="teaser position-relative mx-auto my-4">Checkout</button>
                 </Link>
               <div className=" cord-block ">
-                <p style={{ color: style.color.primary }} > Coordinators : </p>
+                <p  > Coordinators </p>
                 
                 <div className="cord">
                   {coordinators &&
