@@ -8,6 +8,13 @@ import SideNav from "./SideNav";
 function NavBar() {
   const [showNav, setShowNav] = useState(false);
 
+  const navActiveLink = ({isActive})=>{
+    return {
+      fontWeight:isActive?'bold':'normal',
+      color:isActive?'pink':'white'
+    }
+  }
+
   return (
     <div className="nav ">
       {!showNav ? (
@@ -19,8 +26,7 @@ function NavBar() {
           <div className="nav-right">
             <ul className="nav-items">
               <li className="nav-item">
-                <NavLink
-                  activeClassName="is-active"
+                <NavLink style={navActiveLink}
                   className="nav-link"
                   to="/"
                 >
@@ -29,8 +35,7 @@ function NavBar() {
               </li>
 
               <li className="nav-item">
-                <HashLink
-                  activeClassName="is-active"
+                <HashLink 
                   className="nav-link"
                   to="/#about"
                 >
@@ -39,8 +44,7 @@ function NavBar() {
               </li>
 
               <li className="nav-item">
-                <NavLink
-                  activeClassName="is-active"
+                <NavLink style={navActiveLink}
                   className="nav-link"
                   to="/events"
                 >
@@ -50,7 +54,6 @@ function NavBar() {
 
               <li className="nav-item">
                 <HashLink
-                  activeClassName="is-active"
                   className="nav-link"
                   to="/#contact_"
                 >
