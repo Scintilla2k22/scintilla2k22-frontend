@@ -9,19 +9,22 @@ import { Timeline } from "../../../utils/timeline";
 
 export default function Events() {
   const [live_event, setLiveEvent] = useState([]);
+  const [events, setEvents] = useState([]);
+
   const {
-    state: { live_events },
+    state: { live_events, event_list },
     eventContextDispatch,
   } = useContext(EventContext);
 
   useEffect(() => {
     setLiveEvent(live_events);
-  }, [live_events]);
+    setEvents(event_list)
+  }, [live_events, event_list]);
 
   return (
     <div className="container-fluid p-0 m-0 event-head-container ">
       {
-          Timeline && Timeline.map(item =>  <EventBox data={item} /> )
+          events.length > 0 && events.map(item =>  <EventBox data={item} /> )
 
         }
     </div>
