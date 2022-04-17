@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 import './style.scss'
 import {MdLiveTv} from 'react-icons/md'
 import {BsCircle} from 'react-icons/bs'
@@ -9,17 +9,27 @@ export default function EventList(props) {
   
   const{
     data, 
-    type
+    type,
+    event
   } = props;
 
+  let url = "https://www.youtube.com/channel/UC-NYMUWDLUwxruNUzpOzO4g";
 
+  useEffect(() => {
+    url = event.url
+  }, []);
+
+  console.log( "Event list", props)
   return (
-    <div className=' events-page-list'>
+    <div className=' events-page-list position-relative'>
         <div className = 'event-list-blur'></div>
         <div className='toolbar'>
             <div className='options'>
                 <div>
-                    <MdLiveTv />
+                  <a  href = {url} target= "_blank" >
+                    <MdLiveTv   />
+
+                  </a>
                     <IoIosOptions />
                 </div>
             </div>

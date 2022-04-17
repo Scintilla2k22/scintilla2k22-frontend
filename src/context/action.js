@@ -60,24 +60,25 @@ export const getEndedEvents = async (dispatch) => {
   }
 };
 
-export const getContestantOfEvent = async (dispatch, team_id, ev_id) => {
+export const getContestantOfEvent = async (dispatch, id) => {
+  
   const response = await axios({
     method: "get",
-    url: `${get_participants}/${team_id}/`,
+    url: `${get_participants}/${id}/`,
   }).then(function (response) {
     return response;
   });
 
-  const team_info = await axios({
+  const event_info = await axios({
     method : "get",
-    url : `${get_event}/${ev_id}/`
-  }).then( () => {
-    return response
+    url : `${get_event}/${id}/`
+  }).then( (res) => {
+    return res.data.data
   });
 
-  console.log(response)
+  console.log("response" , response)
   if (response) {
-    dispatch({ type: "GET_SELECTED_EVENT_INFO", payload: { participants :  response.data.data, team : team_info} });
+    dispatch({ type: "GET_SELECTED_EVENT_INFO", payload: { participants :  response.data.data, event : event_info} });
   }
 };
 

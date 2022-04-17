@@ -11,6 +11,7 @@ export default function Event()
   const params = useParams();
   
   const [data, setData] = useState([])
+  const [event, setEventInfo] = useState({})
 
   const { state: {
     selected_event_info,
@@ -32,18 +33,20 @@ export default function Event()
 
 
   useEffect(() => {
-      setData(selected_event_info)
-      console.log(" event data", data)
+      setData(selected_event_info.participants)
+      setEventInfo(selected_event_info.event)
+
+      console.log("--event data", selected_event_info)
   }, [selected_event_info]);
 
 
 
 
   return (
-    <div className=' container-fluid position-relative p-0 m-0' 
+    <div className='container-fluid position-relative p-0 m-0' 
     style={ { backgroundColor : "var(--tr_bg) " , overflow : "hidden" }} >
-        <EventHead />
-        <EventList data = {data} type = {params.type} />
+        <EventHead data = {event} />
+        <EventList data = {data} event = {event}  type = {params.type} />
     </div>
   )
 }

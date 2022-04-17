@@ -39,7 +39,7 @@ export const eventReducer = (state = initialState, action) => {
       console.log("reducer", payload)
       return {
         ...state,
-        ...payload,
+         selected_event_info : {...payload},
       };
     default:
       return state;
