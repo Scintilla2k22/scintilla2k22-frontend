@@ -174,7 +174,26 @@ background-color: transparent !important;
 }
 
 
+.live{
 
+  display: inline;
+  position: absolute;
+  width: auto;
+  height: 20px;
+  background-color: red;
+  letter-spacing: 0.1cm;
+  color: white;
+  z-index: 10;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  font-size: 0.7rem;
+
+  border : 1px solid white;
+  
+
+}
+ 
 
 
 

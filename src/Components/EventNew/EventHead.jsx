@@ -27,7 +27,7 @@ export default function EventHead(props) {
 
       <div className="row p-3">
         <div className="col-lg-4 event-page-header-left">
-            <img src = {`${asset}/image/sci-assets/dance.svg`}  />
+            <img src = {getEventSvg(code)} />
         </div>
         <div className="col-md-12  col-lg-8 event-page-header-right">
           <div className="event-info-box">

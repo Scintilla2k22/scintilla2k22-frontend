@@ -270,6 +270,7 @@
 
         position: relative;
         min-width: 600px;   
+        // min-height: 200px;
 
         th{
         color: white;
@@ -289,10 +290,28 @@
             cursor: pointer;
           
         }
+
+        .team-box{
+            position: relative !important;
+            // overflow: hidden !important;
+            background-color: white
+            
+        }
         
         tr:hover > td {
             color : var(--color_pink) !important;
         }
+
+        .team-member-list{
+            width: 100%;
+            background-color: var(--tr_bg);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            position: absolute;
+
+        }
+
     }
 
 

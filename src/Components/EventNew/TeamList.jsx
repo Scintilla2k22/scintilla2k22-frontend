@@ -4,6 +4,8 @@ import { EventContext } from '../../context'
 import { getContestantOfEvent, getTeamOfEvent } from '../../context/action'
 import { useSearchParams } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
+import Profile from '../Contactus/Profile';
+import TeamRow from './TeamRow';
 
 function useQuery() {
   return new URLSearchParams(useLocation().search);
@@ -15,6 +17,15 @@ export default function TeamList(props) {
    data = [],
    type
  } = props;
+
+ const handleClick = (ind) => {
+  if(ind == open)
+  setOpen(-1)
+  else
+  setOpen(ind)
+}
+
+const [open, setOpen] = useState(-1);
 
  console.log(" table data", data)
 
@@ -33,16 +44,30 @@ export default function TeamList(props) {
   </thead>
   <tbody>
 
-    { data.length > 0 && data.map((item, ind) => {
+    { (data && data.length > 0) && data.map((item, ind) => {
 
       return(
-        <tr>
-        <th scope="row">{ind + 1}</th>
+        <>
+        
+        <tr onClick={ () => handleClick(ind)}  >
+        <th scope="row" >{ind + 1}
+        </th>
         <td>{type==0 ? item.name : item.t_name }</td>
-        <td>{ type==0 ? `${item.branch}, ${item.year} year` : item.contestants.length } </td>
+        <td>{ type==0 ? `${item.branch}, ${item.year} year` :  item.contestants && item.contestants.length } </td>
         <td> {item.created_on} </td>
-        <td>{item.score }</td>        
+        <td>{item.score }</td> 
       </tr>
+
+        { (type == 1 && open == ind) ? <tr    className='team-box' >
+         <div className='team-member-list' >
+            {
+                item.contestants && item.contestants.map((part) =>  <Profile data = {part} />)
+            }
+         </div>
+       </tr> : ""
+      }
+       
+      </>
       )
     })}
   
