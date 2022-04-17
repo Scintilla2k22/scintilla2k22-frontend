@@ -34,7 +34,7 @@ export default function EventBox(props) {
               {date && <h6 style={{ color: style.color.primary }} className="subtitle"> {date}</h6>}
               <p className="desc">{desc}</p>
               <Link to = {`/event/info/${id}/${type}`} >
-                <button className="teaser position-relative mx-auto my-4">Checkout</button>
+                <button className="teaser position-relative mx-auto my-4"  >Checkout</button>
                 </Link>
               <div className=" cord-block ">
                 <p  > Coordinators </p>

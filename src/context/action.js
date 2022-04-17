@@ -2,6 +2,7 @@ import axios from "axios";
 import {
   filter_event_type,
   get_all_events,
+  get_event,
   get_participants,
   get_team,
 } from "./api";
@@ -59,7 +60,7 @@ export const getEndedEvents = async (dispatch) => {
   }
 };
 
-export const getContestantOfEvent = async (dispatch, team_id) => {
+export const getContestantOfEvent = async (dispatch, team_id, ev_id) => {
   const response = await axios({
     method: "get",
     url: `${get_participants}/${team_id}/`,
@@ -67,9 +68,16 @@ export const getContestantOfEvent = async (dispatch, team_id) => {
     return response;
   });
 
+  const team_info = await axios({
+    method : "get",
+    url : `${get_event}/${ev_id}/`
+  }).then( () => {
+    return response
+  });
+
   console.log(response)
   if (response) {
-    dispatch({ type: "GET_SELECTED_EVENT_INFO", payload: response.data.data });
+    dispatch({ type: "GET_SELECTED_EVENT_INFO", payload: { participants :  response.data.data, team : team_info} });
   }
 };
 
@@ -82,6 +90,6 @@ export const getTeamOfEvent  = async (dispatch, team_id) => {
   });
 
   if (response) {
-    dispatch({ type: "GET_SELECTED_EVENT_INFO", payload: response.data.data });
+    dispatch({ type: "GET_SELECTED_EVENT_INFO", payload : { participants :  response.data.data} });
   }
 };

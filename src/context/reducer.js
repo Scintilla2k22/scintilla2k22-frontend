@@ -2,7 +2,7 @@ export const initialState = {
   upcomming_events: [],
   live_events: [],
   ended_events: [],
-  selected_event_info: [],
+  selected_event_info: { event : null, participants : []  },
   selected_team_info: [],
   event_list: [],
 };
@@ -35,10 +35,11 @@ export const eventReducer = (state = initialState, action) => {
       };
 
     case "GET_SELECTED_EVENT_INFO":
+      
       console.log("reducer", payload)
       return {
         ...state,
-        selected_event_info: payload,
+        ...payload,
       };
     default:
       return state;
