@@ -4,14 +4,11 @@ import './Events.scss'
 import Profile from '../../Contactus/Profile';
 import { Link } from 'react-router-dom';
 import { getEventSvg } from '../../../utils/eventImg';
-<<<<<<< HEAD
 import { getDate } from '../../../utils';
 
-=======
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
->>>>>>> eaf29d71e5ac33d499ed466e9f3c51f41d0cb5a1
 
 export default function EventBox(props) {
   AOS.init();
