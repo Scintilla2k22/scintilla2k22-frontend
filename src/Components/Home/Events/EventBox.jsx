@@ -4,8 +4,12 @@ import './Events.scss'
 import Profile from '../../Contactus/Profile';
 import { Link } from 'react-router-dom';
 import { getEventSvg } from '../../../utils/eventImg';
-export default function EventBox(props) {
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
+export default function EventBox(props) {
+  AOS.init();
 
   const {
     e_name,
@@ -26,7 +30,7 @@ export default function EventBox(props) {
   } = props.data;
 
   return (
-    <section id={`events-${id}`} className={`container-fluid event-container ${cls}  `}>
+    <section data-aos="zoom-in-up" id={`events-${id}`} className={`container-fluid event-container ${cls}  `}>
       <div className="row   " style={{ zIndex: '2' }}>
         <div className={`col-md-12 col-lg-5 left ${id % 2 ? "order-first" : "order-last"}`} style={{ zIndex: '3' }} >
 
