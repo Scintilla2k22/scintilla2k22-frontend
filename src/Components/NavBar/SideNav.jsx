@@ -9,19 +9,19 @@ import { HashLink } from 'react-router-hash-link';
 import { NavLink } from "react-router-dom"
 
 function SideNav(props) {
-    const{
+    const {
         setShowNav,
         state
-    }  = props;
+    } = props;
 
-    const handleClick =  () => {
+    const handleClick = () => {
         setShowNav(!state)
     }
     return (
         <div className="mobile-nav-right">
-            <div onClick={ () =>  handleClick()}  className="hamburger">
-            <AiOutlineClose />
-          </div>
+            <div onClick={() => handleClick()} className="hamburger">
+                <AiOutlineClose />
+            </div>
             <ul className='mobile-nav-items'>
                 <li className="nav-item">
                     <NavLink activeClassName="is-active" className="nav-link" to="/">Home</NavLink>
@@ -31,7 +31,7 @@ function SideNav(props) {
                     <HashLink activeClassName="is-active" className="nav-link" to="#about">
                         About
                     </HashLink>
-                </li>
+                </li >
 
                 <li className="nav-item">
                     <NavLink activeClassName="is-active" className="nav-link" to="/events">
@@ -43,8 +43,8 @@ function SideNav(props) {
                     <HashLink activeClassName="is-active" className="nav-link" to="#contact_">
                         Contact
                     </HashLink>
-                </li>
-            </ul>
+                </li >
+            </ul >
 
         </div >
 
