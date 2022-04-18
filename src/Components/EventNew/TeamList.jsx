@@ -6,7 +6,7 @@ import { useSearchParams } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
 import Profile from '../Contactus/Profile';
 import TeamRow from './TeamRow';
-
+import { getDate } from '../../utils';
 function useQuery() {
   return new URLSearchParams(useLocation().search);
 }
@@ -54,7 +54,7 @@ const [open, setOpen] = useState(-1);
         </th>
         <td>{type==0 ? item.name : item.t_name }</td>
         <td>{ type==0 ? `${item.branch}, ${item.year} year` :  item.contestants && item.contestants.length } </td>
-        <td> {item.created_on} </td>
+        <td> { getDate(item.created_on)} </td>
         <td>{item.score }</td> 
       </tr>
 

@@ -30,10 +30,10 @@ export default function EventList(props) {
             <div className='options'>
                 <div>
                   <a  href = {url}   target= "_blank" >
-                    <MdLiveTv   />
+                    <MdLiveTv title = "youtube link of contest"  />
                   </a>
 
-                    <FiMoreVertical onClick={()=> setOpen(!open)}  />
+                    <FiMoreVertical onClick={()=> setOpen(!open)} title = "coordinators"   />
                    
                 </div>
             </div>
