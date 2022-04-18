@@ -1,10 +1,10 @@
 import axios from "axios";
 import {
-  filter_event_type,
   get_all_events,
   get_event,
   get_participants,
   get_team,
+  filter_event_status
 } from "./api";
 
 
@@ -24,7 +24,7 @@ export const getEventList = async (dispatch) => {
 export const getUpcommingEventList = async (dispatch) => {
   const response = await axios({
     method: "get",
-    url: `${filter_event_type}/0/`,
+    url: `${filter_event_status}/1/`,
   }).then(function (response) {
     return response;
   });
@@ -38,7 +38,7 @@ export const getUpcommingEventList = async (dispatch) => {
 export const getLiveEvents = async (dispatch) => {
   const response = await axios({
     method: "get",
-    url: `${filter_event_type}/1/`,
+    url: `${filter_event_status}/2/`,
   }).then(function (response) {
     return response;
   });
@@ -51,7 +51,7 @@ export const getLiveEvents = async (dispatch) => {
 export const getEndedEvents = async (dispatch) => {
   const response = await axios({
     method: "get",
-    url: `${filter_event_type}/2/`,
+    url: `${filter_event_status}/3/`,
   }).then(function (response) {
     return response;
   });

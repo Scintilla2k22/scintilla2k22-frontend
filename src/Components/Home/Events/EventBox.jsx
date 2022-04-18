@@ -59,7 +59,7 @@ export default function EventBox(props) {
             </div>
           <div className="col-sm-12 col-md-12 col-lg-7 right">
             <div className="d-flex flex-column p-3 justify-content-center align-item-center">
-              <h2>{e_name} { status == 2 ? <span className='live' >LIVE</span> : "" } </h2>
+              <h2>{e_name} { status == 1 ? <span className='live' >LIVE</span> : "" } </h2>
               {<h6 style={{ color: "var(--color_pink)" }} className="subtitle position-relative"> {getDate(e_time)}  </h6>}
               <p className="desc">{e_desc}</p>
               <Link to = {`/event/info/${id}/${type}`} >
