@@ -14,7 +14,7 @@ function Footer() {
                     <img src={`${loc}/image/instagram.png`} alt="Instagram" />
                 </a>
 
-                <a href="https://www.youtube.com/channel/UC-NYMUWDLUwxruNUzpOzO4g/about?app=desktop" target="_blank">
+                <a href="https://www.youtube.com/channel/UC-NYMUWDLUwxruNUzpOzO4g/featured" target="_blank">
                     <img src={`${loc}/image/youtube.png`} alt="youtube" />
                 </a>
                 <a href="https://m.facebook.com/Scintilla123/" target="_blank">
