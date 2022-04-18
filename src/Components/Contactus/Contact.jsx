@@ -3,6 +3,7 @@ import './contact.scss';
 import Profile from './Profile';
 import { coordinators } from '../../utils/coords';
 
+
 function Contact() {
     return (
         <div className="contact" id = "contact_" >
