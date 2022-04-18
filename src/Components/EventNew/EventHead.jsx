@@ -3,8 +3,19 @@ import "./style.scss";
 import { asset } from "../../utils";
 import Asteroids from "../Arts/asteroids";
 import Planet from "../Arts/planet";
+import { getEventSvg } from "../../utils/eventImg";
+
+
 export default function EventHead(props) {
-  const {} = props.data || {};
+  const {
+    e_name,
+    e_desc,
+    e_time,
+    status, 
+    url,
+    image,
+    code
+  } = props.data || {};
   return (
     <div className="event-page-header">
 
@@ -16,14 +27,14 @@ export default function EventHead(props) {
 
       <div className="row p-3">
         <div className="col-lg-4 event-page-header-left">
-            <img src = {`${asset}/image/sci-assets/dance.svg`}  />
+            <img src = {getEventSvg(code)} />
         </div>
         <div className="col-md-12  col-lg-8 event-page-header-right">
           <div className="event-info-box">
             <span></span>
-            <h2 className="heading2">Dancing Competation</h2>
-            <p className="event-desc eventDesc" >"Lorem ipsum dolor sit amet."</p>
-            <p className="event-time eventTime"> Starting on 22 april 2022</p>
+            <h2 className="heading2"> {e_name}</h2>
+            <p className="event-desc eventDesc" > {e_desc}</p>
+            <p className="event-time eventTime"> Starting on &nbsp;: &nbsp;{e_time}</p>
           </div>
         </div>
       </div>

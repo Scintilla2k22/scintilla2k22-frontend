@@ -2,6 +2,7 @@ import axios from "axios";
 import {
   filter_event_type,
   get_all_events,
+  get_event,
   get_participants,
   get_team,
 } from "./api";
@@ -59,29 +60,48 @@ export const getEndedEvents = async (dispatch) => {
   }
 };
 
-export const getContestantOfEvent = async (dispatch, team_id) => {
+export const getContestantOfEvent = async (dispatch, id) => {
+  
   const response = await axios({
     method: "get",
-    url: `${get_participants}/${team_id}/`,
+    url: `${get_participants}/${id}/`,
   }).then(function (response) {
     return response;
   });
 
-  console.log(response)
+  const event_info = await axios({
+    method : "get",
+    url : `${get_event}/${id}/`
+  }).then( (res) => {
+    return res.data.data
+  });
+
+  console.log("response" , response)
   if (response) {
-    dispatch({ type: "GET_SELECTED_EVENT_INFO", payload: response.data.data });
+    dispatch({ type: "GET_SELECTED_EVENT_INFO", payload: { participants :  response.data.data, event : event_info} });
   }
 };
 
-export const getTeamOfEvent  = async (dispatch, team_id) => {
+export const getTeamOfEvent = async (dispatch, id) => {
+  
   const response = await axios({
     method: "get",
-    url: `${get_team}/${team_id}/`,
+    url: `${get_team}/${id}/`,
   }).then(function (response) {
     return response;
   });
 
+  const event_info = await axios({
+    method : "get",
+    url : `${get_event}/${id}/`
+  }).then( (res) => {
+    return res.data.data
+  });
+
+  console.log("response" , response)
   if (response) {
-    dispatch({ type: "GET_SELECTED_EVENT_INFO", payload: response.data.data });
+    dispatch({ type: "GET_SELECTED_EVENT_INFO", payload: { participants :  response.data.data, event : event_info} });
   }
 };
+
+
