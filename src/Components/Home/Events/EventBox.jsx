@@ -32,30 +32,27 @@ export default function EventBox(props) {
   } = props.data;
 
   return (
-    <section data-aos="zoom-in-up" id={`events-${id}`} className={`container-fluid event-container ${cls}  `}>
-      <div className="row   " style={{ zIndex: '2' }}>
-        <div className={`col-md-12 col-lg-5 left ${id % 2 ? "order-first" : "order-last"}`} style={{ zIndex: '3' }} >
-
+    <section data-aos="zoom-in-up" id={`events-${id}`} className={`container-fluid event-container ${cls}`}>
+       <div className="row   " style={{ zIndex: '2' }}>
+          <div className={`col-md-12 col-lg-5 left ${id % 2 ? "order-first" : "order-last"}`} style={{ zIndex: '3' }} >
+            
 
           <div
-            style={{
-              width: "80%",
-              height: "100%",
-              display: "grid",
-              placeItems: "center",
-              transform: "scale(1)",
-
-            }}
-            className="logoDesign"
-          >
-            <img
-              style={{ width: "100%" }}
-              src={getEventSvg(code)}
-              alt="LOGO "
-            />
-          </div>
-
-
+          style={{
+            width: "80%",
+            height: "100%",
+            display: "grid",
+            placeItems: "center",
+            transform: "scale(1)",
+          
+          }}
+          className="logoDesign"
+        >
+          <img
+            style={{ width: "100%" }}
+            src= {getEventSvg(code)}
+            alt="LOGO "
+          />
         </div>
            
             
@@ -80,17 +77,18 @@ export default function EventBox(props) {
               </div>
 
             </div>
-
           </div>
-      {
-        [1, 2, 3].map((clr, ind) => {
-          return (
-            <Planet />
-          )
-
-        })
-      }
+        </div>
+        {
+          [1,2,3].map((clr, ind) => {
+            return (
+              <Planet  />
+            )
+  
+          })
+        }
     </section >
   )
 
 };
+

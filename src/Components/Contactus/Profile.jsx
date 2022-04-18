@@ -10,7 +10,7 @@ function Profile(props) {
         name = "Ayush",
         branch = "CSE",
         year = "3rd year",
-        contact="102221",
+        contact_number="102221",
         gender = "male"
     } = props.data || {}
 
@@ -21,7 +21,7 @@ function Profile(props) {
             <div className='profile-info'>
                 <p className="name">{ name}</p>
                 <p className="role">{branch} {", "} {year} </p>
-                <p className="phone">+91{ contact }</p>
+                <p className="phone">+91{ contact_number }</p>
             </div>
         </div>
     )
