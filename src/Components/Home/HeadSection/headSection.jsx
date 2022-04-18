@@ -2,12 +2,6 @@ import React from "react";
 import "./headSection.scss";
 import Particles from "react-tsparticles";
 
-
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-
-
 import {
   particlePreset,
   particleStatic,
