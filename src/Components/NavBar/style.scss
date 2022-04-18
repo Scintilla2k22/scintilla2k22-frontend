@@ -70,6 +70,10 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                .nav-link{
+                    font-weight: bold;
+                }
             }
             :hover{
                 color:rgb(255, 0, 89);

@@ -1,6 +1,7 @@
 import React from "react";
 import "./headSection.scss";
 import Particles from "react-tsparticles";
+
 import {
   particlePreset,
   particleStatic,
@@ -17,6 +18,7 @@ const particlesLoaded = (container) => {
 };
 
 const HeadSection = () => {
+
   return (
     <>
       <section className="head-container ">
@@ -66,8 +68,8 @@ const HeadSection = () => {
         <div className="col-md-6  head-right"></div>
       </section>
       <div className="wave-box bg-light">
-      <img src = {`${asset}/image/curves.svg`} />
-  </div>
+        <img src={`${asset}/image/curves.svg`} />
+      </div>
     </>
   );
 };
