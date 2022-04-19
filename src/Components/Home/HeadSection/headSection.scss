@@ -110,7 +110,9 @@
     .head-container{
       
         .head-left{
-            align-items: center;
+            // align-items: center;
+            position: relative;
+            top: 20%;
             justify-content: center;
             display: flex !important;
         }

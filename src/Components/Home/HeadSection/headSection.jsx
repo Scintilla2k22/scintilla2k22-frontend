@@ -60,7 +60,7 @@ const HeadSection = () => {
                 href="https://www.youtube.com/channel/UC-NYMUWDLUwxruNUzpOzO4g/about?app=desktop"
                 target="_blank"
               >
-                <button className="teaser">Explore Treasure</button>
+                <button className="teaser">Explore Teasure</button>
               </a>
             </div>
           </div>
