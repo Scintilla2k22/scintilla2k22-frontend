@@ -16,6 +16,7 @@ code {
 }
 
 *{
+
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
@@ -54,6 +55,13 @@ code {
 
 --special_color : #ed196b;
 --special_hover_color : #7f0234;
+
+/*  
+  Badge Color
+*/
+--gold_badge : #ed196b;
+--silver_badge : green;
+--bronze_badge : blue;
 
 
 }
@@ -107,6 +115,10 @@ a{
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+
+
+
+
 
 
 

@@ -7,6 +7,7 @@ import {
   filter_event_status
 } from "./api";
 
+import { comparator } from "../utils";
 
 export const getEventList = async (dispatch) => {
   const response = await axios({
@@ -69,6 +70,10 @@ export const getContestantOfEvent = async (dispatch, id) => {
     return response;
   });
 
+  let data = response.data.data || [];
+
+  data.sort((a,b) => b.score - a.score)
+
   const event_info = await axios({
     method : "get",
     url : `${get_event}/${id}/`
@@ -78,7 +83,7 @@ export const getContestantOfEvent = async (dispatch, id) => {
 
   console.log("response" , response)
   if (response) {
-    dispatch({ type: "GET_SELECTED_EVENT_INFO", payload: { participants :  response.data.data, event : event_info} });
+    dispatch({ type: "GET_SELECTED_EVENT_INFO", payload: { participants :  data, event : event_info} });
   }
 };
 
@@ -91,6 +96,10 @@ export const getTeamOfEvent = async (dispatch, id) => {
     return response;
   });
 
+  let data = response.data.data || [];
+  data.sort((a,b) => b.score - a.score)
+
+
   const event_info = await axios({
     method : "get",
     url : `${get_event}/${id}/`
@@ -100,7 +109,7 @@ export const getTeamOfEvent = async (dispatch, id) => {
 
   console.log("response" , response)
   if (response) {
-    dispatch({ type: "GET_SELECTED_EVENT_INFO", payload: { participants :  response.data.data, event : event_info} });
+    dispatch({ type: "GET_SELECTED_EVENT_INFO", payload: { participants :  data, event : event_info} });
   }
 };
 

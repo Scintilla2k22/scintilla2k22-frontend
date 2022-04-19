@@ -34,7 +34,7 @@ export default function EventHead(props) {
             <span></span>
             <h2 className="heading2"> {e_name}</h2>
             <p className="event-desc eventDesc" > {e_desc}</p>
-            <p className="event-time eventTime"> Starting on &nbsp;: &nbsp;{getDate(e_time)}</p>
+            <p className="event-time eventTime"> { status == 1 ?  "Starting on" : status == 3 ?  "Held on"  : "" } &nbsp;: &nbsp;{getDate(e_time)}</p>
           </div>
         </div>
       </div>

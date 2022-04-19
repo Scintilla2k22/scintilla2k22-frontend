@@ -6,7 +6,11 @@ import { useSearchParams } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
 import Profile from '../Contactus/Profile';
 import TeamRow from './TeamRow';
-import { getDate } from '../../utils';
+import { getDate, ranking } from '../../utils';
+import {AiOutlineStar} from 'react-icons/ai'
+
+
+
 function useQuery() {
   return new URLSearchParams(useLocation().search);
 }
@@ -25,7 +29,10 @@ export default function TeamList(props) {
   setOpen(ind)
 }
 
+
+
 const [open, setOpen] = useState(-1);
+const badge = ranking(data);
 
  console.log(" table data", data)
 
@@ -52,7 +59,7 @@ const [open, setOpen] = useState(-1);
         <tr onClick={ () => handleClick(ind)}  >
         <th scope="row" >{ind + 1}
         </th>
-        <td>{type==0 ? item.name : item.t_name }</td>
+        <td> { badge(item.score)} {type==0 ? item.name : item.t_name }</td>
         <td>{ type==0 ? `${item.branch}, ${item.year} year` :  item.contestants && item.contestants.length } </td>
         <td> { getDate(item.created_on)} </td>
         <td>{item.score }</td> 
