@@ -32,9 +32,9 @@ export default function Timeline() {
 <section class="block">
   <div class="each-year">
       { 
-      data.map( (ind) =>    <div key ={ind} class="each-event">
+      data.map( (ind, i) =>    <div key ={ind} class="each-event">
 
-        <Ripples data = { ind } />
+        <Ripples data = { ind }  id = {i} />
     </div>)
        
       }   

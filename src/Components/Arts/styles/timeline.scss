@@ -10,7 +10,8 @@
     overflow: hidden;
   z-index: 4;
   position: relative;
-  height: 100vh !important;
+  min-height: 100vh !important;
+  height: auto;
   }
   
   .block {
