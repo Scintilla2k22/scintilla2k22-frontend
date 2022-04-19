@@ -10,8 +10,8 @@ export default function Ripples(props) {
 
   return (
     <div className='ripple-box'>
-      <div className='image' style={{ background: `url(${asset}/memories/img${id + 1}.jpg` }}  >
-
+      <div className='image' >
+        <img src = {`${asset}/memories/img${id+1}.jpg`} />
       </div>
     </div>
   )
