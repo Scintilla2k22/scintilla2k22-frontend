@@ -13,7 +13,9 @@ import { EffectFlip, Pagination, Navigation } from "swiper";
 
 import EventCard from './EventCard'
 
-function EventMobileCard() {
+function EventMobileCard(props) {
+    const { data} = props || [];
+
     return (
         <div>
             <Swiper
@@ -24,15 +26,14 @@ function EventMobileCard() {
                 modules={[EffectFlip, Pagination, Navigation]}
                 className="mySwiper"
             >
-                <SwiperSlide><EventCard /></SwiperSlide>
-                <SwiperSlide><EventCard /></SwiperSlide>
-                <SwiperSlide><EventCard /></SwiperSlide>
-                <SwiperSlide><EventCard /></SwiperSlide>
-                <SwiperSlide><EventCard /></SwiperSlide>
-                <SwiperSlide><EventCard /></SwiperSlide>
-                <SwiperSlide><EventCard /></SwiperSlide>
-                <SwiperSlide><EventCard /></SwiperSlide>
-                <SwiperSlide><EventCard /></SwiperSlide>
+
+            { data && data.length && data.map( ( item, ind) => {
+                    return (
+                        <SwiperSlide  > <EventCard data = {item} key = {ind} /></SwiperSlide>
+                    )
+                }) }
+
+            
             </Swiper>
         </div>
     )

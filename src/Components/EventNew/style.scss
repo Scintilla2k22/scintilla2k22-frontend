@@ -227,6 +227,10 @@
             min-width: 300px;
             width: 30%;
             height: auto;
+
+            svg{
+                cursor: pointer;
+            }
             div svg{
                 margin : 0px 25px;
             }

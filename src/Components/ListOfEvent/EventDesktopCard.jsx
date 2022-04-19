@@ -1,6 +1,6 @@
 import React from 'react'
 import EventCard from './EventCard'
-import './ListOfEvent.css';
+import './ListOfEvent.scss';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -12,7 +12,11 @@ import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
-function EventDesktopCard() {
+function EventDesktopCard(props) {
+
+    const {
+        data
+    } = props || []
     return (
         <div>
             <Swiper className='swiper'
@@ -27,13 +31,11 @@ function EventDesktopCard() {
                 navigation={true}
                 modules={[Pagination, Navigation]}
             >
-                <SwiperSlide  > <EventCard /></SwiperSlide>
-                <SwiperSlide> <EventCard /></SwiperSlide>
-                <SwiperSlide> <EventCard /></SwiperSlide>
-                <SwiperSlide> <EventCard /></SwiperSlide>
-                <SwiperSlide> <EventCard /></SwiperSlide>
-                <SwiperSlide> <EventCard /></SwiperSlide>
-                <SwiperSlide> <EventCard /></SwiperSlide>
+                { data && data.length && data.map( ( item, ind) => {
+                    return (
+                        <SwiperSlide  > <EventCard data = {item} key = {ind} /></SwiperSlide>
+                    )
+                }) }
             </Swiper>
         </div>
     )
