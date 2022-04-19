@@ -41,7 +41,7 @@ function EventCasd(props) {
         </div>
         <div className="right-info">
           <p className="event-name">{e_name}</p>
-          <p className="event-desc">{e_desc}</p>
+          <p className="event-desc2">{e_desc}</p>
         </div>
       </div>
       {showButton && (

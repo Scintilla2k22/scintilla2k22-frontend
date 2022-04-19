@@ -7,8 +7,27 @@ export default function About() {
   return (
     <div id='about' className="container-fluid  about-container">
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-6 about-left-section">
+            <div className="ripples-container">
+               <Ripples content = {               <>
+                 <span> 14+</span>
+                 <p>Events</p>
+                 </>
+               } />
+               <Ripples content = { 
+                 <>
+                 <span> 800+</span>
+                 <p>ENG</p>
+                 </>
+               } />
+               <Ripples content = { 
+                 <>
+                 <span>All</span>
+                 <p>SET</p>
+                 </>
+               } />
 
+            </div>
         </div>
         <div className="col-md-12 col-lg-6 d-flex justify-content-center">
           <div className="  about-text">
@@ -44,7 +63,7 @@ export default function About() {
         </div>
       </div>
       {
-        [2, 2, 2].map((id) => <Planet />)
+        [2, 2].map((id) => <Planet />)
       }
 
     </div>

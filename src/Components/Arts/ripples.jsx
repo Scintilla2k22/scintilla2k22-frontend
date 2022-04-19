@@ -5,7 +5,9 @@ import { asset } from '../../utils'
 export default function Ripples(props) {
 
   const {
-    id
+    id,
+    data,
+    content
   } = props;
 
   return (
@@ -13,6 +15,8 @@ export default function Ripples(props) {
       <div className='image' >
         <img src = {`${asset}/memories/img${id+1}.jpg`} />
       </div>
+      {content}
+
     </div>
   )
 }

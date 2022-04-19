@@ -99,25 +99,25 @@ a{
   font-size: 3rem;
 }
 
-
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+background: var(--color_pink); 
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
-  border-radius: 5px;
+background: var(--color_purple); 
+border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+background: #555; 
 }
-
-
-
 
 
 

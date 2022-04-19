@@ -51,9 +51,13 @@
             flex-direction: column;      
 
             .event-desc{
+                display: block;
                 color: var(--color_grey);
                 height: auto;
-                text-overflow: ellipsis !important;
+                // text-overflow: ellipsis !important;
+                // overflow: hidden;
+                // white-space: nowrap;
+                // width: 90%;
             }
             .event-time{
                 color: white;
@@ -273,8 +277,8 @@
     .table{ 
 
         position: relative;
-        min-width: 600px;   
-        // min-height: 200px;
+        min-width: 600px  ;
+        table-layout: auto;   
 
         th{
         color: white;
@@ -298,8 +302,8 @@
         .team-box{
             position: relative !important;
             // overflow: hidden !important;
-            background-color: white
-            
+            background-color: white;
+            height: 200px;
         }
         
         tr:hover > td {
