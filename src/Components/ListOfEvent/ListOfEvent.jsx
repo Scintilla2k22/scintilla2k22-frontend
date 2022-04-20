@@ -4,6 +4,7 @@ import "./ListOfEvent.scss";
 import { EventContext } from "../../context";
 import EventMobileCard from "./EventMobileCard";
 import EventDesktopCard from "./EventDesktopCard";
+import MemoriesCarousel from "./MemoriesCarousel";
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -43,19 +44,22 @@ function ListOfEvent() {
 
   return (
     <div className="events-list">
-      <div
-        style={{
-          background: `url('${process.env.PUBLIC_URL}/image/event-header.jpg') no-repeat center center/cover`,
-        }}
+     <div
+           style={{
+            background: `url('${process.env.PUBLIC_URL}/memories/img4.jpg') no-repeat center center/cover`,
+          }}
         className="event-header"
-      >
+      >  
         <div className="left-header"></div>
         <div className="right-header">
           <h1>FOllow The Events</h1>
           <p>
             Start from <span>22 April</span> 2k22
           </p>
-        </div>
+        </div> 
+
+        {/* <MemoriesCarousel /> */}
+
       </div>
 
  { live_event.length > 0 ? <div className="event-slider">
