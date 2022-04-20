@@ -57,15 +57,26 @@ export const ranking = (obj) => {
 
     return function getBadge(score){
 
-        let index = binary_search(ranks, score);
+        // let index = binary_search(ranks, score);
 
         console.log("ranks : ", ranks, index, score)
 
-        if( score && index != -1 && index <= 2){
+        // if( score && index != -1 && index <= 2){
             
-                return badges[index];        
-        }
+        //         return badges[index];        
+        // }
 
+        if( ranks.length > 0 &&  score == ranks[0]){
+            return badges[0];
+        }else
+        if(ranks.length > 1 && score == ranks[1]){
+            return badges[1];
+        }else 
+        if(ranks.length > 2 && score == ranks[2]){
+            return badges[2];
+        }
+        else
+        return "";
 
         return "";
     }

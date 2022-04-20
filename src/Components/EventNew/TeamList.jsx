@@ -11,9 +11,7 @@ import {AiOutlineStar} from 'react-icons/ai'
 
 
 
-function useQuery() {
-  return new URLSearchParams(useLocation().search);
-}
+ 
 
 export default function TeamList(props) {
 
