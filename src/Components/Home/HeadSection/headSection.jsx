@@ -1,7 +1,6 @@
-import React from "react";
+import React, {useRef, createRef} from "react";
 import "./headSection.scss";
 import Particles from "react-tsparticles";
-
 import {
   particlePreset,
   particleStatic,
@@ -18,6 +17,37 @@ const particlesLoaded = (container) => {
 };
 
 const HeadSection = () => {
+
+  const rRef = createRef();
+  const lRef = createRef();
+
+  const pRef = [createRef(), createRef(), createRef()];
+
+  const headRef = createRef();
+  window.addEventListener('scroll', () => {
+
+    let scroll = window.scrollY;
+    if(rRef && rRef.current){
+      rRef.current.style.top = `${scroll*1.1}px`;
+  
+    }
+
+    if(lRef && lRef.current){
+      lRef.current.style.top = `${scroll*0.1}px`;
+  
+    }
+
+    if(headRef && headRef.current){
+      headRef.current.style.top = `${scroll*1.2}px`;
+    }
+
+    for(var i=0; i<3; i++){
+      if(pRef[i] && pRef[i].current){
+        pRef[i].current.style.top = `calc(50% - 200px + ${scroll*1.8}px )`;
+      }
+    }
+
+  })
 
   return (
     <>
@@ -36,11 +66,19 @@ const HeadSection = () => {
             <Asteroids />
           ))}
           {/* <div className="head-planet"></div> */}
-          <img src={`${asset}/image/head-left-image.png`} />
 
-          <img src={`${asset}/image/head-right-image.png`} />
+          <img src={`${asset}/image/p1.svg`}  ref = {pRef[0]} />
+          <img src={`${asset}/image/p2.svg`}  ref = {pRef[1]} />
+          <img src={`${asset}/image/p3.svg`}  ref = {pRef[2]} />
+
+          <img src={`${asset}/image/head-left-image.png`} ref = {rRef} />
+
+          <img src={`${asset}/image/head-right-image.png`}  ref = {lRef} />
+
+      
+
         </div>
-        <div className="row head-content m-0">
+        <div ref = {headRef} className="row head-content m-0">
           <div className="col-md-12 col-md-6 head-left ">
             <div className="head-box">
               <div className="text-1">
