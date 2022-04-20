@@ -16,7 +16,7 @@ export default function About() {
                } />
                <Ripples content = { 
                  <>
-                 <span> 800+</span>
+                 <span> 1000+</span>
                  <p>ENG</p>
                  </>
                } />
