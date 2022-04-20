@@ -34,6 +34,14 @@
   margin-left: 50px;
 }
 
+.nav-item a.active{
+  
+}
+
+.nav-item a:hover{
+  color:rgb(255, 0, 89);
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
