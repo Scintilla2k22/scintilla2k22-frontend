@@ -59,7 +59,6 @@ export const ranking = (obj) => {
 
         // let index = binary_search(ranks, score);
 
-        console.log("ranks : ", ranks, index, score)
 
         // if( score && index != -1 && index <= 2){
             
