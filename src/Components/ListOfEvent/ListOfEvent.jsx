@@ -24,6 +24,7 @@ function ListOfEvent() {
     eventContextDispatch,
   } = useContext(EventContext);
 
+    const [img_index, setIndex] = useState(1);
   useEffect(() => {
     setUpEvent(upcomming_events);
     setLiveEvent(live_events);
@@ -42,11 +43,21 @@ function ListOfEvent() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  useEffect( () => {
+
+    console.log("hello buddy")
+    const intervalId =  setInterval( () => {
+      setIndex((img_index + 1)%5)
+    }, 7000);
+    return () => clearInterval(intervalId);
+  }, [] )
+
+
   return (
     <div className="events-list">
      <div
            style={{
-            background: `url('${process.env.PUBLIC_URL}/memories/img4.jpg') no-repeat center center/cover`,
+            background: `url('${process.env.PUBLIC_URL}/memories/img${img_index}.webp') no-repeat center center/cover`,
           }}
         className="event-header"
       >  

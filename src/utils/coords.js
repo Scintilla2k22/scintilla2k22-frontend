@@ -7,77 +7,46 @@ export const coordinators = [
         name : "Aparna Joshi",
         gender : 'female',
         branch : 'CSE',
-        year : '4th year',
-        contact : '7060326613',
+        year : 'final year',
+        contact_number : '7060326613',
         committe : "Dance"
 
     },
-    {
-        id : 2,
-        name : "Gaurav Kumar ",
-        gender : 'male',
-        branch : 'CSE',
-        year : '4th year',
-        contact : 'XX-XX-XX-XX',
-        committe : "Dance"
-
-
-    },
-
+ 
     {
         id : 3,
         name : "Anjali Devrari",
         gender : 'female',
         branch : 'CSE',
-        year : '4th year',
-        contact : '9119710171',
+        year : 'final year',
+        contact_number : '9119710171',
         committe : "Dance"
 
 
     },
 
-    {
-        id : 4,
-        name : "Ishika Pant",
-        gender : 'female',
-        branch : 'CSE',
-        year : '4th year',
-        contact : 'XX-XX-XX-XX',
-        committe : "Singing"
-
-    },
-
+   
     {
         id : 5,
         name : "Shubham Tripathi",
         gender : 'male',
         branch : 'CSE',
-        year : '4th year',
-        contact : '7055024508',
+        year : 'final year',
+        contact_number : '7055024508',
         committe : "Singing"
 
 
     },
 
-    {
-        id : 6,
-        name : "Aanchal Budiyal",
-        gender : 'female',
-        branch : 'CSE',
-        year : '4th year',
-        contact : 'XX-XX-XX-XX',
-        committe : "Singing"
-      
-
-    },
+ 
 
     {   
         id : 7,
         name : "Mayank Thapliyal",
         gender : 'male',
         branch : 'CSE',
-        year : '4th year',
-        contact : '6399932775',
+        year : 'final year',
+        contact_number : '6399932775',
         committe : "Poetry"
 
     },
@@ -87,8 +56,8 @@ export const coordinators = [
         name : "Abhishek Yadav",
         gender : 'male',
         branch : 'CSE',
-        year : '4th year',
-        contact : '7055566622',
+        year : 'final year',
+        contact_number : '7055566622',
         committe : "Poetry"
 
 
@@ -99,31 +68,21 @@ export const coordinators = [
         name : "Ankita Bohra",
         gender : 'male',
         branch : 'CSE',
-        year : '4th year',
-        contact : '8057238063',
+        year : 'final year',
+        contact_number : '8057238063',
         committe : "Face painting"
 
     },
 
-    {
-        id : 10,
-        name : "Saurav Joshi",
-        gender : 'male',
-        branch : 'CSE',
-        year : '4th year',
-        contact : 'XX-XX-XX-XX',
-        committe : "Face painting"
-       
-
-    },
+   
 
     {
         id : 11,
         name : "Himani Mehta",
         gender : 'female',
         branch : 'CSE',
-        year : '4th year',
-        contact : '9411758750',
+        year : 'final year',
+        contact_number : '9411758750',
         committe : "Mandala"
        
 
@@ -133,8 +92,8 @@ export const coordinators = [
     //     name : "Akansha Pathak",
     //     gender : 'female',
     //     branch : 'CSE',
-    //     year : '4th year',
-    //     contact : '8126570573',
+    //     year : 'final year',
+    //     contact_number : '8126570573',
     //     committe : "Mandala"
        
        
@@ -145,7 +104,7 @@ export const coordinators = [
     //     name : "Shilpa Rana",
     //     gender : 'female',
     //     branch : 'CSE',
-    //     year : '4th year',
+    //     year : 'final year',
     //     contact : 'XX-XX-XX-XX',
     //     committe : "Rangoli"
        
@@ -156,7 +115,7 @@ export const coordinators = [
     //     name : "Adeeba Shaheen",
     //     gender : 'female',
     //     branch : 'CSE',
-    //     year : '4th year',
+    //     year : 'final year',
     //     contact : 'XX-XX-XX-XX',
     //     committe : "Rangoli"
        
@@ -167,7 +126,7 @@ export const coordinators = [
     //     name : "Shraddha Sah",
     //     gender : 'female',
     //     branch : 'CSE',
-    //     year : '4th year',
+    //     year : 'final year',
     //     contact : '7310874328',
     //     committe : "Campus diva , Short Film Making"
        
@@ -178,7 +137,7 @@ export const coordinators = [
     //     name : "Kriti Sharma",
     //     gender : 'female',
     //     branch : 'CSE',
-    //     year : '4th year',
+    //     year : 'final year',
     //     contact : '8126705777',
     //     committe : "Campus diva"
         
@@ -189,7 +148,7 @@ export const coordinators = [
     //     name : "Rishabh Saxena",
     //     gender : 'male',
     //     branch : 'CSE',
-    //     year : '4th year',
+    //     year : 'final year',
     //     contact : '9997907591',
     //     committe : "SKIT"
        
@@ -200,7 +159,7 @@ export const coordinators = [
     //     name : "Abhishek Yadav",
     //     gender : 'male',
     //     branch : 'CSE',
-    //     year : '4th year',
+    //     year : 'final year',
     //     contact : '7055566622',
     //     committe : "SKIT"
         
@@ -212,7 +171,7 @@ export const coordinators = [
     //     name : "Saarim Zaid ",
     //     gender : 'male',
     //     branch : 'CSE',
-    //     year : '4th year',
+    //     year : 'final year',
     //     contact : '7300923828',
     //     committe : "SKIT"
         
@@ -224,7 +183,7 @@ export const coordinators = [
     //     name : "Vishal Kumar",
     //     gender : 'male',
     //     branch : 'CSE',
-    //     year : '4th year',
+    //     year : 'final year',
     //     contact : '7300923828',
     //     committe : "Short film making"
         
@@ -236,7 +195,7 @@ export const coordinators = [
     //     name : "Akansha Pathak",
     //     gender : 'male',
     //     branch : 'CSE',
-    //     year : '4th year',
+    //     year : 'final year',
     //     contact : '8126570573',
     //     committe : "Photography"
         
@@ -248,7 +207,7 @@ export const coordinators = [
     //     name : "Gaurav Kumar",
     //     gender : 'male',
     //     branch : 'CSE',
-    //     year : '4th year',
+    //     year : 'final year',
     //     contact : 'XX-XX-XX-XX',
     //     committe : "Photography"
         
@@ -261,7 +220,7 @@ export const coordinators = [
     //     name : "Diksha Adhikari",
     //     gender : 'female',
     //     branch : 'CSE',
-    //     year : '4th year',
+    //     year : 'final year',
     //     contact : 'XX-XX-XX-XX',
     //     committe : "BTKIT got talent"
         
@@ -273,7 +232,7 @@ export const coordinators = [
     //     name : "Dheeraj Budhlakoti",
     //     gender : 'male',
     //     branch : 'CSE',
-    //     year : '4th year',
+    //     year : 'final year',
     //     contact : '9639260117',
     //     committe : "BTKIT got talent"
        
@@ -286,7 +245,7 @@ export const coordinators = [
     //     name : "Gaurav Kumar",
     //     gender : 'male',
     //     branch : 'CSE',
-    //     year : '4th year',
+    //     year : 'final year',
     //     contact : 'XX-XX-XX-XX',
     //     committe : "BTKIT got talent"
         
@@ -298,7 +257,7 @@ export const coordinators = [
     //     name : "Payal Chuphal",
     //     gender : 'female',
     //     branch : 'CSE',
-    //     year : '4th year',
+    //     year : 'final year',
     //     contact : '9997597921',
     //     committe : "Frame Designing"
         
@@ -310,7 +269,7 @@ export const coordinators = [
     //     name : "Aanchal Budiyal",
     //     gender : 'female',
     //     branch : 'CSE',
-    //     year : '4th year',
+    //     year : 'final year',
     //     contact : 'XX-XX-XX-XX',
     //     committe : "Frame Designing"
         
