@@ -52,8 +52,8 @@
             font-weight: bold;
             // display: none;
             font-size: 2rem;
-
         }
+        
         .nav-items{
             display: flex;
             justify-content: center;
@@ -70,14 +70,12 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
                 .nav-link{
                     font-weight: bold;
                 }
             }
             :hover{
                 color:rgb(255, 0, 89);
-                transform:  translateY(4px);
             }
         }
     }

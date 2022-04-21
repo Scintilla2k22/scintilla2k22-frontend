@@ -62,7 +62,7 @@ const HeadSection = () => {
         </div>
 
         <div className="head-bg">
-          {[1, 2, 4, 5, 1, 2, 4, 5, 1, 2, 4, 5, 6,6,6].map(() => (
+          {[1, 2, 4, 5, 1, 2, 4, 5, 1, 2, 4, 5, 6, 6, 6].map(() => (
             <Asteroids />
           ))}
           {/* <div className="head-planet"></div> */}
@@ -98,7 +98,7 @@ const HeadSection = () => {
                 href="https://www.youtube.com/channel/UC-NYMUWDLUwxruNUzpOzO4g/about?app=desktop"
                 target="_blank"
               >
-                <button className="teaser">Explore Teasure</button>
+                <button className="teaser">Explore Teaser</button>
               </a>
             </div>
           </div>

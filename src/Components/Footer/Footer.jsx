@@ -7,10 +7,10 @@ function Footer() {
     return (
         <div className="footer">
             <div className="footer-left">
-               Made with <span>	&#x2764;</span> by  <a href='https://www.linkedin.com/in/mohd-anas-a39a6b1a4/' target="_blank" > Anas</a>, <a href='https://www.linkedin.com/in/ayush-bisht-9a5582192/' target="_blank"> Ayush Bisht </a> 
+                Made with <span>	&#x2764;</span> by  <a href='https://www.linkedin.com/in/mohd-anas-a39a6b1a4/' target="_blank" >Mohd Anas</a>, <a href='https://www.linkedin.com/in/ayush-bisht-9a5582192/' target="_blank"> Ayush Bisht </a>
             </div>
             <div >
-            © 2k22 scintilla2022.tech, All rights reserved.
+                © 2k22 scintilla2022.tech, All rights reserved.
             </div>
             <div className="footer-right">
                 <a href="https://www.instagram.com/scintilla2k22/" target="_blank">
