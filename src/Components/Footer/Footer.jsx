@@ -13,16 +13,22 @@ function Footer() {
                 © 2k22 scintilla2022.tech, All rights reserved.
             </div>
             <div className="footer-right">
-                <a href="https://www.instagram.com/scintilla2k22/" target="_blank">
+
+                <a title='linktree' href="https://linktr.ee/scintilla2k22" target="_blank">
+                    <img src={`${loc}/image/linktree.png`} alt="linktree" />
+                </a>
+                <a title='instagram' href="https://www.instagram.com/scintilla2k22/" target="_blank">
                     <img src={`${loc}/image/instagram.png`} alt="Instagram" />
                 </a>
 
-                <a href="https://www.youtube.com/channel/UC-NYMUWDLUwxruNUzpOzO4g/featured" target="_blank">
+                <a title='youtube' href="https://www.youtube.com/channel/UC-NYMUWDLUwxruNUzpOzO4g/featured" target="_blank">
                     <img src={`${loc}/image/youtube.png`} alt="youtube" />
                 </a>
-                <a href="https://m.facebook.com/Scintilla123/" target="_blank">
+                <a title='facebook' href="https://m.facebook.com/Scintilla123/" target="_blank">
                     <img src={`${loc}/image/facebook.png`} alt="facebook" />
                 </a>
+
+
             </div>
         </div >
     )
