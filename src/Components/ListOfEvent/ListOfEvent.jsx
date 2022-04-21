@@ -24,20 +24,12 @@ function ListOfEvent() {
         eventContextDispatch,
     } = useContext(EventContext);
 
-<<<<<<< HEAD
+    const [img_index, setIndex] = useState(1);
     useEffect(() => {
         setUpEvent(upcomming_events);
         setLiveEvent(live_events);
         setEndedEvent(ended_events);
     }, [upcomming_events, live_events, ended_events]);
-=======
-    const [img_index, setIndex] = useState(1);
-  useEffect(() => {
-    setUpEvent(upcomming_events);
-    setLiveEvent(live_events);
-    setEndedEvent(ended_events);
-  }, [upcomming_events, live_events, ended_events]);
->>>>>>> 2d7fadbd93fa6536b63b2f65c124be2e5526ea87
 
     const [windowDimensions, setWindowDimensions] = useState(
         getWindowDimensions()
@@ -51,12 +43,21 @@ function ListOfEvent() {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-<<<<<<< HEAD
+    useEffect(() => {
+
+        console.log("hello buddy")
+        const intervalId = setInterval(() => {
+            setIndex((img_index + 1) % 5)
+        }, 7000);
+        return () => clearInterval(intervalId);
+    }, [])
+
+
     return (
         <div className="events-list">
             <div
                 style={{
-                    background: `url('${process.env.PUBLIC_URL}/memories/img4.jpg') no-repeat center center/cover`,
+                    background: `url('${process.env.PUBLIC_URL}/memories/img${img_index}.webp') no-repeat center center/cover`,
                 }}
                 className="event-header"
             >
@@ -67,33 +68,6 @@ function ListOfEvent() {
                         Start from <span>22 April</span> 2k22
                     </p>
                 </div>
-=======
-  useEffect( () => {
-
-    console.log("hello buddy")
-    const intervalId =  setInterval( () => {
-      setIndex((img_index + 1)%5)
-    }, 7000);
-    return () => clearInterval(intervalId);
-  }, [] )
-
-
-  return (
-    <div className="events-list">
-     <div
-           style={{
-            background: `url('${process.env.PUBLIC_URL}/memories/img${img_index}.webp') no-repeat center center/cover`,
-          }}
-        className="event-header"
-      >  
-        <div className="left-header"></div>
-        <div className="right-header">
-          <h1>FOllow The Events</h1>
-          <p>
-            Start from <span>22 April</span> 2k22
-          </p>
-        </div> 
->>>>>>> 2d7fadbd93fa6536b63b2f65c124be2e5526ea87
 
                 {/* <MemoriesCarousel /> */}
 
