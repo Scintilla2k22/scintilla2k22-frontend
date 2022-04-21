@@ -13,7 +13,7 @@ export default function Ripples(props) {
   return (
     <div className='ripple-box'>
       <div className='image' >
-        <img src = {`${asset}/memories/img${id+1}.webp`} />
+        <img src = {`${asset}/memories/img${id}.webp`} />
       </div>
       {content}
 

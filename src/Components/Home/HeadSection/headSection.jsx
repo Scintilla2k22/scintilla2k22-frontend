@@ -24,30 +24,30 @@ const HeadSection = () => {
   const pRef = [createRef(), createRef(), createRef()];
 
   const headRef = createRef();
-  window.addEventListener('scroll', () => {
+  // window.addEventListener('scroll', () => {
 
-    let scroll = window.scrollY;
-    if(rRef && rRef.current){
-      rRef.current.style.top = `${scroll*1.1}px`;
+  //   let scroll = window.scrollY;
+  //   if(rRef && rRef.current){
+  //     rRef.current.style.top = `${scroll*0.2}px`;
   
-    }
+  //   }
 
-    if(lRef && lRef.current){
-      lRef.current.style.top = `${scroll*0.1}px`;
+  //   if(lRef && lRef.current){
+  //     lRef.current.style.top = `${scroll*0.1}px`;
   
-    }
+  //   }
 
-    if(headRef && headRef.current){
-      headRef.current.style.top = `${scroll*1.2}px`;
-    }
+  //   if(headRef && headRef.current){
+  //     headRef.current.style.top = `${scroll*0.4}px`;
+  //   }
 
-    for(var i=0; i<3; i++){
-      if(pRef[i] && pRef[i].current){
-        pRef[i].current.style.top = `calc(50% - 200px + ${scroll*1.8}px )`;
-      }
-    }
+  //   for(var i=0; i<3; i++){
+  //     if(pRef[i] && pRef[i].current){
+  //       pRef[i].current.style.top = `calc(50% - 200px + ${scroll*1.8}px )`;
+  //     }
+  //   }
 
-  })
+  // })
 
   return (
     <>
