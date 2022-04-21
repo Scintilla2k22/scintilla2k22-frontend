@@ -11,7 +11,7 @@ export const getEventSvg = (code) => {
       return `${asset}/image/sci-assets/singing.svg`;
 
     case "SKIT":
-      return `${asset}/image/sci-assets/singing.svg`;
+      return `${asset}/image/sci-assets/drama.svg`;
 
     case "POET":
       return `${asset}/image/sci-assets/poetry.svg`;
@@ -31,11 +31,14 @@ export const getEventSvg = (code) => {
     case "TREA":
       return `${asset}/image/sci-assets/treasurehunt.svg`;
 
-    case "DRAM":
-      return `${asset}/image/sci-assets/drama.svg`;
-
     case "MAND":
       return `${asset}/image/sci-assets/mandala.svg`;
+
+    case "PHOT":
+      return `${asset}/image/sci-assets/photography.svg`;
+
+    case "ROAD":
+      return `${asset}/image/sci-assets/roadies.svg`;
 
 
     default:
