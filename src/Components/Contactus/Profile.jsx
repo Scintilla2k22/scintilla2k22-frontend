@@ -5,18 +5,17 @@ import { avatarList } from '../../utils/avatarList'
 const loc = process.env.PUBLIC_URL
 
 const getYear = (year) => {
-    switch(year){
-        case "1" :
-            return "1st year"
-        case "2":
-            return "2nd year"
-        case "3":
-            return "3rd year"
-        case "4":
-            return "final year"
-        default :
-            return year
-    }
+    if(year == 1 || year == "1")
+    return "1st year"
+    else
+    if(year == 2 || year == "2")
+    return "2nd year"
+    if(year == 3 || year == "3")
+    return "3rd year"
+    if(year == 4 || year == "4")
+    return "final year"
+    else
+    return year
 }
 
 function Profile(props) {
