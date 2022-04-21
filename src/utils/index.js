@@ -65,13 +65,14 @@ export const ranking = (obj) => {
         //         return badges[index];        
         // }
 
-        if( ranks.length > 0 &&  score == ranks[0]){
+
+        if(  score!= 0.0 && ranks.length > 0 &&  score == ranks[0] ){
             return badges[0];
         }else
-        if(ranks.length > 1 && score == ranks[1]){
+        if( score!= 0.0 && ranks.length > 1 && score == ranks[1]){
             return badges[1];
         }else 
-        if(ranks.length > 2 && score == ranks[2]){
+        if( score!= 0.0 &&  ranks.length > 2 && score == ranks[2]){
             return badges[2];
         }
         else

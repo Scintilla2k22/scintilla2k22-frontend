@@ -14,6 +14,8 @@
         
     }
 
+ 
+
     .head-bg{
         padding: 0px;
         width: 100%;
@@ -22,9 +24,71 @@
         overflow: hidden !important;
         z-index: 5 !important;
         
-        & img:nth-of-type(1){
-            opacity: 0.4 !important;
+
+        img{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        z-index: 5 !important;
+    
         }
+
+
+        & img:nth-of-type(1){
+
+            left: calc(50% - 200px);
+            top: calc(50% - 200px);
+            width: 500px;
+            height: 500px;
+            z-index: 0;
+            opacity: 0.6 !important;
+            filter: drop-shadow(10px 10px 50px cyan);
+            animation: rotate-planet 100s ease-in infinite forwards;
+            transform-origin: bottom !important;
+            transform-box: border-box;
+
+        }
+
+        @keyframes rotate-planet {
+            
+            from{
+                transform: rotateZ(0deg);
+            }
+            to{
+                transform: rotateZ(360deg);
+
+            }
+
+        }
+
+
+        & img:nth-of-type(2){
+
+            width: 100px;
+            height: 100px;
+            left: 30%;
+            top: 20%;
+        }
+
+        & img:nth-of-type(3){
+
+            width: 100px;
+            height: 100px;
+
+        }
+
+        & img:nth-of-type(4){
+            // opacity: 0.4 !important;
+            z-index:   44 !important;
+
+        }
+
+        & img:nth-of-type(5){
+            z-index: 189900 !important;
+        }
+
+ 
+        
 
         .head-planet{
             position: absolute;
@@ -48,13 +112,7 @@
             }
         }
 
-        img{
-            position: absolute;
-            height: 100%;
-            width: 100%;
-        z-index: 5 !important;
-
-        }
+      
 
         
 
@@ -68,8 +126,9 @@
         position: absolute;
         top: 15%;
         left: 10%;
+        z-index:   5 !important;
+
         font-family: var(--fest-font);
-        z-index: 10;
         .text-1{
             color: white;
             font-size: 6rem;

@@ -32,10 +32,11 @@ export const getEventSvg = (code) => {
       return `${asset}/image/sci-assets/treasurehunt.svg`;
 
     case "DRAM":
-      return `${asset}/image/sci-assets/treasurehunt.svg`;
+      return `${asset}/image/sci-assets/drama.svg`;
 
     case "MAND":
-      return `${asset}/image/sci-assets/treasurehunt.svg`;
+      return `${asset}/image/sci-assets/mandala.svg`;
+
 
     default:
       return `${asset}/image/sci-assets/talenthunt.svg`;
