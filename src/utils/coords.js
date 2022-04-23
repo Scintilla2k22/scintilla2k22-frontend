@@ -1,90 +1,119 @@
 import Contact from "../Components/Contactus/Contact";
 
+export const techCoords = [
+
+    {
+        id: 1,
+        name: "Ayush Bisht",
+        gender: 'male',
+        branch: 'CSE',
+        year: '3rd year',
+        contact_number: '7037296166',
+
+    },
+    {
+        id: 2,
+        name: "Mohd Anas",
+        gender: 'male',
+        branch: 'CSE',
+        year: '3rd year',
+        contact_number: '7037796592',
+
+    }, {
+        id: 3,
+        name: "Kamlesh Joshi",
+        gender: 'male',
+        branch: 'CSE',
+        year: '3rd year',
+        contact_number: '7088354111',
+
+    },
+]
 export const coordinators = [
 
     {
-        id : 1,
-        name : "Aparna Joshi",
-        gender : 'female',
-        branch : 'CSE',
-        year : 'final year',
-        contact_number : '7060326613',
-        committe : "Dance"
-
-    },
- 
-    {
-        id : 3,
-        name : "Anjali Devrari",
-        gender : 'female',
-        branch : 'CSE',
-        year : 'final year',
-        contact_number : '9119710171',
-        committe : "Dance"
-
-
-    },
-
-   
-    {
-        id : 5,
-        name : "Shubham Tripathi",
-        gender : 'male',
-        branch : 'CSE',
-        year : 'final year',
-        contact_number : '7055024508',
-        committe : "Singing"
-
-
-    },
-
- 
-
-    {   
-        id : 7,
-        name : "Mayank Thapliyal",
-        gender : 'male',
-        branch : 'CSE',
-        year : 'final year',
-        contact_number : '6399932775',
-        committe : "Poetry"
+        id: 1,
+        name: "Aparna Joshi",
+        gender: 'female',
+        branch: 'CSE',
+        year: 'final year',
+        contact_number: '7060326613',
+        committe: "Dance"
 
     },
 
     {
-        id : 8,
-        name : "Abhishek Yadav",
-        gender : 'male',
-        branch : 'CSE',
-        year : 'final year',
-        contact_number : '7055566622',
-        committe : "Poetry"
+        id: 3,
+        name: "Anjali Devrari",
+        gender: 'female',
+        branch: 'CSE',
+        year: 'final year',
+        contact_number: '9119710171',
+        committe: "Dance"
+
+
+    },
+
+
+    {
+        id: 5,
+        name: "Shubham Tripathi",
+        gender: 'male',
+        branch: 'CSE',
+        year: 'final year',
+        contact_number: '7055024508',
+        committe: "Singing"
+
+
+    },
+
+
+
+    {
+        id: 7,
+        name: "Mayank Thapliyal",
+        gender: 'male',
+        branch: 'CSE',
+        year: 'final year',
+        contact_number: '6399932775',
+        committe: "Poetry"
+
+    },
+
+    {
+        id: 8,
+        name: "Abhishek Yadav",
+        gender: 'male',
+        branch: 'CSE',
+        year: 'final year',
+        contact_number: '7055566622',
+        committe: "Poetry"
 
 
     },
 
     {
-        id : 9,
-        name : "Ankita Bohra",
-        gender : 'male',
-        branch : 'CSE',
-        year : 'final year',
-        contact_number : '8057238063',
-        committe : "Face painting"
+        id: 9,
+        name: "Ankita Bohra",
+        gender: 'male',
+        branch: 'CSE',
+        year: 'final year',
+        contact_number: '8057238063',
+        committe: "Face painting"
 
     },
 
-   
+
 
     {
-        id : 11,
-        name : "Himani Mehta",
-        gender : 'female',
-        branch : 'CSE',
-        year : 'final year',
-        contact_number : '9411758750',
-        committe : "Mandala"
-       
+        id: 11,
+        name: "Himani Mehta",
+        gender: 'female',
+        branch: 'CSE',
+        year: 'final year',
+        contact_number: '9411758750',
+        committe: "Mandala"
+
 
     },
     // {
@@ -95,8 +124,8 @@ export const coordinators = [
     //     year : 'final year',
     //     contact_number : '8126570573',
     //     committe : "Mandala"
-       
-       
+
+
 
     // },
     // {
@@ -107,7 +136,7 @@ export const coordinators = [
     //     year : 'final year',
     //     contact : 'XX-XX-XX-XX',
     //     committe : "Rangoli"
-       
+
 
     // },
     // {
@@ -118,7 +147,7 @@ export const coordinators = [
     //     year : 'final year',
     //     contact : 'XX-XX-XX-XX',
     //     committe : "Rangoli"
-       
+
 
     // },
     // {
@@ -129,7 +158,7 @@ export const coordinators = [
     //     year : 'final year',
     //     contact : '7310874328',
     //     committe : "Campus diva , Short Film Making"
-       
+
 
     // },
     // {
@@ -140,7 +169,7 @@ export const coordinators = [
     //     year : 'final year',
     //     contact : '8126705777',
     //     committe : "Campus diva"
-        
+
 
     // },
     // {
@@ -151,7 +180,7 @@ export const coordinators = [
     //     year : 'final year',
     //     contact : '9997907591',
     //     committe : "SKIT"
-       
+
 
     // },
     // {
@@ -162,8 +191,8 @@ export const coordinators = [
     //     year : 'final year',
     //     contact : '7055566622',
     //     committe : "SKIT"
-        
-       
+
+
 
     // },
     // {
@@ -174,8 +203,8 @@ export const coordinators = [
     //     year : 'final year',
     //     contact : '7300923828',
     //     committe : "SKIT"
-        
-       
+
+
 
     // },
     // {
@@ -186,8 +215,8 @@ export const coordinators = [
     //     year : 'final year',
     //     contact : '7300923828',
     //     committe : "Short film making"
-        
-       
+
+
 
     // },
     // {
@@ -198,8 +227,8 @@ export const coordinators = [
     //     year : 'final year',
     //     contact : '8126570573',
     //     committe : "Photography"
-        
-       
+
+
 
     // },
     // {
@@ -210,9 +239,9 @@ export const coordinators = [
     //     year : 'final year',
     //     contact : 'XX-XX-XX-XX',
     //     committe : "Photography"
-        
-        
-       
+
+
+
 
     // },
     // {
@@ -223,8 +252,8 @@ export const coordinators = [
     //     year : 'final year',
     //     contact : 'XX-XX-XX-XX',
     //     committe : "BTKIT got talent"
-        
-       
+
+
 
     // },
     // {
@@ -235,9 +264,9 @@ export const coordinators = [
     //     year : 'final year',
     //     contact : '9639260117',
     //     committe : "BTKIT got talent"
-       
-        
-       
+
+
+
 
     // },
     // {
@@ -248,8 +277,8 @@ export const coordinators = [
     //     year : 'final year',
     //     contact : 'XX-XX-XX-XX',
     //     committe : "BTKIT got talent"
-        
-       
+
+
 
     // },
     // {
@@ -260,8 +289,8 @@ export const coordinators = [
     //     year : 'final year',
     //     contact : '9997597921',
     //     committe : "Frame Designing"
-        
-       
+
+
 
     // },
     // {
@@ -272,13 +301,13 @@ export const coordinators = [
     //     year : 'final year',
     //     contact : 'XX-XX-XX-XX',
     //     committe : "Frame Designing"
-        
-       
+
+
 
     // },
 
 
-  
+
 
 
 
